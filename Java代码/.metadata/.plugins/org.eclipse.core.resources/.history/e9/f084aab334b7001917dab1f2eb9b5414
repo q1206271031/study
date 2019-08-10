@@ -1,0 +1,16 @@
+package com.young.test;
+
+import java.util.Scanner;
+
+public class test07 {
+	static Scanner input=new Scanner(System.in);
+	public static void main(String[] args) {
+		
+		int i=(int)Math.random();
+		
+		
+		
+		
+	}
+
+}

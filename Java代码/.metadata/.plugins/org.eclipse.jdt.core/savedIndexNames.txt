@@ -1,0 +1,2 @@
+INDEX VERSION 1.130+D:\比特学习\Java代码\.metadata\.plugins\org.eclipse.jdt.core
+3051088984.index

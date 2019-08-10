@@ -1,0 +1,21 @@
+package com.young.test;
+
+//import javax.swing.JOptionPane;
+
+public class Test01 {
+	public static void main(String[] args) {
+		char a='1';
+		char b='A';
+		char c='B';
+		char d='a';
+		char e='b';
+		System.out.println((int)b);
+		System.out.println("hello");
+	//	JOptionPane.showMessageDialog(null,"are you ok ?");
+		javax.swing.JOptionPane.showMessageDialog(null, b);
+//		javax.swing.JOptionPane.showMessageDialog(parentComponent, message, title, messageType);
+//		javax.swing.JOptionPane.showMessageDialog(parentComponent, message, title, messageType, icon);
+//		
+	}
+
+}

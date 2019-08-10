@@ -1,0 +1,37 @@
+package com.young.test;
+
+import java.util.logging.ErrorManager;
+
+import javax.swing.JOptionPane;
+
+import javax.swing.JOptionPane;//������
+import javax.swing.*;//ͨ������룻����һ���������е���
+
+public class Test01 {
+	public static void main(String[] args) {
+		char a='1';
+//		char b='A';
+//		char c='B';
+//		char d='a';
+//		char e='b';
+		System.out.println((int)a);//�ַ�תASCII�룻
+//	JOptionPane.showMessageDialog(null,"are you OK ?");
+		javax.swing.JOptionPane.showMessageDialog(null, a);//�����������ӷ���ֱ�ӵ��ã���ȥimport...;
+//		javax.swing.JOptionPane.showMessageDialog(parentComponent, message, title, messageType);
+/*		javax.swing.JOptionPane.showMessageDialog(null, "message", "title", JOptionPane.INFORMATION_MESSAGE);
+		javax.swing.JOptionPane.showMessageDialog(null, "message", "title", JOptionPane.WARNING_MESSAGE);
+		javax.swing.JOptionPane.showMessageDialog(null, "mes_asage", "title", JOptionPane.ERROR_MESSAGE);
+		javax.swing.JOptionPane.showMessageDialog(null, "message", "title",JOptionPane. QUESTION_MESSAGE);
+		javax.swing.JOptionPane.showMessageDialog(null, "message", "title",JOptionPane. PLAIN_MESSAGE);
+
+*/		JOptionPane.showInputDialog("arg0");
+
+//		JOptionPane.showInputDialog(arg0, arg1);
+//		JOptionPane.showInputDialog(arg0, arg1, arg2, arg3)
+//		
+		
+//		javax.swing.JOptionPane.showMessageDialog(parentComponent, message, title, messageType, icon);
+//		
+	}
+
+}

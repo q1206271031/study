@@ -1,0 +1,47 @@
+package com.young.test;
+
+public class test02 {
+
+	static void add() {
+		System.out.println(1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 0);
+
+	}
+//数据类型的转换 短赋值给长不用管
+	static double PI() {
+		long length = 1000000000000000;
+		double result = 0;
+		double four = 4;
+		double temp;
+		for (double i = 1; i < length; i += 4) {
+			temp=1/i;//刚开始中间过渡没啥用；
+			result +=temp;
+			//System.out.println(result);
+
+		}
+		for (double i = 3; i < length; i += 4) {
+			
+			result -= 1 / i;
+			//System.out.println(result);
+
+		}
+		return  4*result;
+	}
+
+	static void printf() {
+		System.out.println((double) (9.5 * 4.5 - 2.5 * 3) / (45.5 - 3.5));
+		System.out.printf("%10.16f\n", (9.5 * 4.5 - 2.5 * 3) / (45.5 - 3.5));// 宽度至少为10
+		System.out.printf("%17.16f\n", (9.5 * 4.5 - 2.5 * 3) / (45.5 - 3.5));
+		System.out.printf("%18.16f\n", (9.5 * 4.5 - 2.5 * 3) / (45.5 - 3.5));
+		System.out.printf("%19.16f\n", (9.5 * 4.5 - 2.5 * 3) / (45.5 - 3.5));// 当宽度大于实际值时整数位应该是补了0，不显示
+		System.out.printf("%20.16f\n", (9.5 * 4.5 - 2.5 * 3) / (45.5 - 3.5));
+		System.out.printf("%-20.16f\n", (9.5 * 4.5 - 2.5 * 3) / (45.5 - 3.5));// 左对齐
+
+	}
+
+	public static void main(String[] args) {
+		double accept;
+		accept = PI();
+		System.out.println(accept);
+
+	}
+}
