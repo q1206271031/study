@@ -2,12 +2,12 @@
 
 #include<stdio.h>
 #include<windows.h>
-//#define _CRT_SECURE_NO_WARNINGS 1
 
-
-int Max(int arr[], int len) {
+int Max(int arr[], int len)
+{
 	int max =arr[0];
-	for (int i = 0; i < len; i++) {
+	for (int i = 0; i < len; i++)
+	{
 		//max > arr[i] ? max = max : max = arr[i];
 		if (max > arr[i])
 		{
@@ -25,9 +25,9 @@ int main()
 	char b;
 	for (int  i = 0; i < 10; i++)
 	{
-		printf("请输入数组的a[%d]元素", i);
+		printf("璇疯緭鍏ユ暟缁勭殑a[%d]鍏冪礌", i);
 		scanf("%d",&a[i]);
-		printf("按任意键继续录入，输入N结束");
+		printf("鎸変换鎰忛敭缁х画褰曞叆锛岃緭鍏缁撴潫");
 		getchar();
 		scanf("%c", &b);
 		if (b=='N')
