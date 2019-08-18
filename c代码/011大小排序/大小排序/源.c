@@ -44,10 +44,27 @@ void selectSort2(int a[], int len)
 		a[i] = max;
 	}
 }
+void selectSort3(int a[],int len)
+{
+	for (int i = 0; i < len; i++)
+	{
+		int max = a[i];
+		for (int j = i+1; j < len; j++)
+		{
+			if (max<a[j])
+			{
+				swap(&a[j], &max);
+			}
+		}
+		a[i] = max;
+	}
+}
+
 //插入排序
 //把数组分成已排序和未排序两个区间，以数组第一个元素当做已排序区间，剩下的即被当做未排序区间，
 //每次都从未排序区间中找出一个元素来和已排序区间中的元素比较，并插入到已排序区间中的合适位置，
 //直到未排序区间元素为 0 。
+
 
 void insertSort(int arr[], int length) {
 	for (int i = 1; i < length; i++) {
@@ -83,6 +100,27 @@ void insertSort2(int a[], int len)
 	}
 
 }
+void insertSort3(int a[], int len)
+{
+	for (int i = 1; i < len; i++)
+	{
+		int max = a[i];
+		int j;
+		for ( j = i-1; j >=0; j--)
+		{
+			if (max > a[i])
+			{
+				a[j + 1] = a[j];
+			}
+			else
+			{
+				break;
+			}
+		}
+		a[j + 1] = max;
+	}
+}
+
 //
 void bubbleSort(int arr[],int length)
 {
@@ -94,6 +132,20 @@ void bubbleSort(int arr[],int length)
 			if (arr[i] < arr[i + 1])//降序
 			{
 				swap(&arr[i], &arr[i + 1]);
+			}
+		}
+	}
+}
+void bubbleSort1(int a[], int len)
+{
+	for (int j = 0; j < len; j++)
+	{
+		int i = 0;
+		for ( ; i < len - 1; i++)
+		{
+			if (a[i] < a[i + 1])
+			{
+				swap(&a[i], &a[i + 1]);
 			}
 		}
 	}
@@ -119,7 +171,7 @@ int main()
 
 	selectSort2(a, length1);
 	insertSort2(b, length2);
-	bubbleSort(c, length3);
+	bubbleSort1(c, length3);
 	print(a, length1);//print函数用来打印数组
 	printf("\n");
 	print(b, length2);//print函数用来打印数组
