@@ -20,15 +20,32 @@ void method(int s)
 		sn += si;//Sn
 		result += sn;//SnµÄºÍ
 		b *= 10;
+
 	}
 	printf("%d\n", result);
 }
+
+int Fun(int s1,int n)
+{
+	int i;
+	int temp = 0;
+	int sum = 0;
+	for (i = 0; i < n; i++)
+	{
+		temp = temp * 10 + s1;
+		sum += temp;
+	}
+	return sum;
+}
 int main()
 {
-	int s;
+	int s1;
+	int n = 3;
 	printf("ÇëÊäÈëS1");
-	scanf("%d", &s);
-	method(s);
+	scanf("%d", &s1);
+
+	//method(s1);
+	printf("%d\n", Fun(s1,n));
 	system("pause");
 	return 0;
 }
