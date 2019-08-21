@@ -9,6 +9,174 @@
 	<atom:link rel="self" href="http://planeteclipse.org/rss20.xml" type="application/rss+xml"/>
 
 <item>
+	<title>Mat Booth: Eclipse is Now a Module on Fedora 30</title>
+	<guid isPermaLink="false">tag:blog.matbooth.co.uk,2019-08-21:/09-eclipse-module-f30.html/</guid>
+	<link>http://blog.matbooth.co.uk/09-eclipse-module-f30.html</link>
+	<description>&lt;p&gt;How to install the Eclipse IDE module on Fedora 30!&lt;/p&gt;</description>
+	<pubDate>Wed, 21 Aug 2019 13:30:00 +0000</pubDate>
+</item>
+<item>
+	<title>Maximilian and Jonas: Modeling Symposium @ EclipseCon Europe 2019</title>
+	<guid isPermaLink="false">https://eclipsesource.com/?p=41891</guid>
+	<link>https://eclipsesource.com/blogs/2019/08/20/modeling-symposium-eclipsecon-europe-2019/</link>
+	<description>&lt;p&gt;We are happy to announce that Ed, Philip and Jonas are organizing the Modeling Symposium for the EclipseCon Europe 2019 in...&lt;/p&gt;&lt;p&gt;The post &lt;a href=&quot;https://eclipsesource.com/blogs/2019/08/20/modeling-symposium-eclipsecon-europe-2019/&quot; rel=&quot;nofollow&quot;&gt;Modeling Symposium @ EclipseCon Europe 2019&lt;/a&gt; appeared first on &lt;a href=&quot;https://eclipsesource.com&quot; rel=&quot;nofollow&quot;&gt;EclipseSource&lt;/a&gt;.&lt;/p&gt;</description>
+	<pubDate>Tue, 20 Aug 2019 08:58:43 +0000</pubDate>
+</item>
+<item>
+	<title>Jonas Hungershausen: GSoC 2019 Summary: Dart support for the Eclipse IDE</title>
+	<guid isPermaLink="true">https://jonas-jonas.dev/posts/dartboard-summary/</guid>
+	<link>https://jonas-jonas.dev/posts/dartboard-summary/</link>
+	<description>&lt;p&gt;Summary of my Summer of Code 2019&lt;/p&gt;
+&lt;p&gt;This post is a summary of my Summer of Code 2019.
+My project was to bring Dart development support to the Eclipse IDE.
+To do so I created a plugin that consumes the Dart analysis server using &lt;a href=&quot;https://projects.eclipse.org/projects/technology.lsp4e&quot;&gt;LSP4E&lt;/a&gt;.
+It also provides syntax highlighting using &lt;a href=&quot;https://projects.eclipse.org/projects/technology.tm4e&quot;&gt;TM4E&lt;/a&gt; and many more features listed below.&lt;/p&gt;
+&lt;h1&gt;Features&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;The following list showcases the most significant features of the plugin I (and other contributors) added during GSoC 2019.&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Running Dart programs directly from Eclipse&lt;/strong&gt; - &lt;a href=&quot;https://github.com/eclipse/dartboard/issues/1&quot;&gt;eclipse/dartboard#1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Standard &amp;amp; error output in a dedicated console&lt;/li&gt;
+&lt;li&gt;Support for multiple Launch configurations&lt;/li&gt;
+&lt;li&gt;Running single files from the context menu&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Dart preference page&lt;/strong&gt; - &lt;a href=&quot;https://github.com/eclipse/dartboard/issues/10&quot;&gt;eclipse/dartboard#10&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Set the location for the Dart SDK that should be used for all actions&lt;/li&gt;
+&lt;li&gt;Choose whether to automatically synchronize the dependencies of project&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;First class Pub support&lt;/strong&gt; - &lt;a href=&quot;https://github.com/eclipse/dartboard/pull/107&quot;&gt;eclipse/dartboard#107&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Automatic synchronization of Pub dependencies when changing the &lt;code&gt;pubspec.yaml&lt;/code&gt; file&lt;/li&gt;
+&lt;li&gt;Shortcut for running &lt;code&gt;$ pub get&lt;/code&gt; manually&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Creating new Dart projects and files&lt;/strong&gt; - &lt;a href=&quot;https://github.com/eclipse/dartboard/pull/115&quot;&gt;eclipse/dartboard#115&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Stagehand templates are also supported&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Usage of the Dart logo&lt;/strong&gt; - &lt;a href=&quot;https://github.com/eclipse/dartboard/commit/a23fc1f57cd3fdc6e702759c507aa977f7dd7561&quot;&gt;eclipse/dartboard@a23fc1f&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Import existing Dart projects directly into the workspace&lt;/strong&gt; (+ automatic dependency synchronization) - &lt;a href=&quot;https://github.com/eclipse/dartboard/pull/116&quot;&gt;eclipse/dartboard#116&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Upstream Bug Fixes&lt;/h1&gt;
+&lt;p&gt;During development I encountered many issues with the libraries and tools I was using.
+As I was already aware I took the time to fix them directly and provide a patch or PR for the corresponding library.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A &lt;code&gt;NullPointerException&lt;/code&gt; in LSP4E's &lt;code&gt;SymbolsModel#getChildren&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Issue: &lt;a href=&quot;https://github.com/eclipse/dartboard/issues/4&quot;&gt;eclipse/dartboard#4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix: &lt;a href=&quot;https://git.eclipse.org/r/#/c/139273/&quot;&gt;Change 139273&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Adjusted the Eclipse Light syntax theme in TM4E to match the classic Eclipse theme better&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Issue: &lt;a href=&quot;https://github.com/eclipse/dartboard/issues/21&quot;&gt;eclipse/dartboard#21&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix: &lt;a href=&quot;https://github.com/eclipse/tm4e/pull/215&quot;&gt;eclipse/tm4e#215&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Using the quick access menu in Eclipse resulted in an Exception.
+This was caused by LSP4E not adhering to the LSP spec.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Issue: &lt;a href=&quot;https://bugs.eclipse.org/bugs/show_bug.cgi?id=548155&quot;&gt;Bug 548155&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix: &lt;a href=&quot;https://git.eclipse.org/r/#/c/143723/&quot;&gt;Change 143723&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;textDocument/didSave&lt;/code&gt; notification is not supported by the Dart analysis server but LSP4E sent it anyway and this resulted in an error&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Issue: &lt;a href=&quot;https://github.com/eclipse/dartboard/issues/32&quot;&gt;eclipse/dartboard#32&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix: &lt;a href=&quot;https://git.eclipse.org/r/#/c/143922/&quot;&gt;Change 143922&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Another NPE in TM4E's &lt;code&gt;ThemeContribution&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Issue: &lt;a href=&quot;https://github.com/eclipse/tm4e/issues/207&quot;&gt;eclipse/tm4e#207&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix: &lt;a href=&quot;https://github.com/eclipse/tm4e/pull/217&quot;&gt;eclipse/tm4e#217&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Things Left to do&lt;/h1&gt;
+&lt;p&gt;I have completed all of my goals I set in the initial proposal for GSoC.
+However a few things and features have come up during development that I will take care of in the near future.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Pub console&lt;/strong&gt; - Currently there is now way to see the output of the pub commands
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/eclipse/dartboard/issues/117&quot;&gt;eclipse/dartboard#117&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Flutter support&lt;/strong&gt; - Flutter apps need to be run using the special &lt;code&gt;$ flutter&lt;/code&gt; command suite, instead of the default SDK
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/eclipse/dartboard/issues/109&quot;&gt;eclipse/dartboard#109&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Webdev support&lt;/strong&gt; - Dart apps that should be run on the browser need to be run using the &lt;code&gt;$ webdev&lt;/code&gt; command line tools
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/eclipse/dartboard/issues/110&quot;&gt;eclipse/dartboard#110&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There also are a few subtleties in the user experience that need to be taken care of.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;A full list of commits and issues can be found on the &lt;a href=&quot;https://github.com/eclipse/dartboard&quot;&gt;project's GitHub repository&lt;/a&gt;.
+Installation instructions can also be found there.&lt;/p&gt;
+&lt;h1&gt;Appreciation&lt;/h1&gt;
+&lt;p&gt;In the early days, Lakshminarayana Nekkanti has joined the project as a committer.
+He has been extremely helpful since by fixing bugs in the Eclipse platform that have been open for years (&lt;a href=&quot;https://bugs.eclipse.org/bugs/show_bug.cgi?id=513034&quot;&gt;Bug 513034&lt;/a&gt;) and contributing a lot of features and knowledge to the plugin.
+Thank you, Lakshminarayana!&lt;/p&gt;
+&lt;p&gt;I would also like to thank Lars Vogel who has been my Mentor and helped tremendously when I was unsure what to do.&lt;/p&gt;</description>
+	<pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>EclipseCon Europe 2019: Sponsor Testimonial: Bosch Software Innovations</title>
+	<guid isPermaLink="false">2168 at https://www.eclipsecon.org</guid>
+	<link>https://www.eclipsecon.org/europe2019/news/sponsor-testimonial-bosch-software-innovations</link>
+	<description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;&lt;em&gt;...We find EclipseCon Europe to be the ideal gathering ground for the open source community and the perfect place to share and gain insights into new open source developments and trends. This year, we are contributing six sessions to the conference. We &lt;a href=&quot;https://www.eclipsecon.org/europe2019/sessions/if-bosch-can-do-it-you-can-do-it-too&quot;&gt;share insights into our approach to open source&lt;/a&gt; and take a closer look at &lt;a href=&quot;https://www.eclipsecon.org/europe2019/sessions/eclipse-hawkbit-101&quot;&gt;Eclipse hawkBit&lt;/a&gt;, &lt;a href=&quot;https://www.eclipsecon.org/europe2019/sessions/using-eclipse-kuksa-connected-vehicle-services&quot;&gt;Eclipse Kuksa&lt;/a&gt;, &lt;a href=&quot;https://www.eclipsecon.org/europe2019/sessions/osgi-creates-real-technical-added-value-iot-%E2%80%93-let%E2%80%99s-talk-about-concrete-use&quot;&gt;OSGi&lt;/a&gt; as well as ways of &lt;a href=&quot;https://www.eclipsecon.org/europe2019/sessions/ensuring-open-source-compliance-using-eclipse-foundation-technology&quot;&gt;improving efficiency of open source compliance processes&lt;/a&gt;. Feel free to also join us at the IoT playground....&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-news-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://www.eclipsecon.org/europe2019/news/sponsor-testimonial-bosch-software-innovations&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;img-responsive block-center&quot; height=&quot;250&quot; src=&quot;https://www.eclipsecon.org/sites/default/files/styles/solstice_news_-_default_-_thumbnail/public/news/BoschSpeakers.png?itok=Ky5jga8U&quot; width=&quot;250&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+	<pubDate>Thu, 15 Aug 2019 14:48:50 +0000</pubDate>
+</item>
+<item>
+	<title>Maximilian and Jonas: Scaffolding a JSON Forms application with Yeoman</title>
+	<guid isPermaLink="false">https://eclipsesource.com/?p=41880</guid>
+	<link>https://eclipsesource.com/blogs/2019/08/14/scaffolding-a-json-forms-application-with-yeoman/</link>
+	<description>&lt;p&gt;JSON Forms is a framework for efficiently developing form-based UIs based on JSON Schema.  It provides a simple declarative JSON-based language...&lt;/p&gt;&lt;p&gt;The post &lt;a href=&quot;https://eclipsesource.com/blogs/2019/08/14/scaffolding-a-json-forms-application-with-yeoman/&quot; rel=&quot;nofollow&quot;&gt;Scaffolding a JSON Forms application with Yeoman&lt;/a&gt; appeared first on &lt;a href=&quot;https://eclipsesource.com&quot; rel=&quot;nofollow&quot;&gt;EclipseSource&lt;/a&gt;.&lt;/p&gt;</description>
+	<pubDate>Wed, 14 Aug 2019 10:15:56 +0000</pubDate>
+</item>
+<item>
+	<title>Donald Raab: Two Years and Fifty Blogs</title>
+	<guid isPermaLink="false">https://medium.com/p/15dbbe422f60</guid>
+	<link>https://medium.com/@donraab/two-years-and-fifty-blogs-15dbbe422f60?source=rss-df39b86e9f04------2</link>
+	<description>&lt;p&gt;Happy Blogiversary&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/1024/1*uLC17Sc4aWbawcxU7allhA.png&quot; /&gt;&lt;figcaption&gt;Grounds for Sculpture, Hamilton Township, NJ&lt;/figcaption&gt;&lt;/figure&gt;&lt;h3&gt;Welcome to Medium&lt;/h3&gt;&lt;p&gt;Two years ago, I wrote my first blog. It was about Symmetry in API design.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://medium.com/@donraab/symmetric-sympathy-2c59d4541d60&quot;&gt;Symmetric Sympathy&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Writing this blog was one of the hardest and most rewarding things I have done in my career as a software developer.&lt;/p&gt;&lt;p&gt;I have been blogging at least once a month ever since. In the following sections I will share the most popular and my personal favorite blogs for each of the three calendar years I have been blogging. Enjoy!&lt;/p&gt;&lt;h3&gt;2017 — Finding My Voice&lt;/h3&gt;&lt;p&gt;I write a lot about the Java programming language and &lt;a href=&quot;https://www.eclipse.org/collections/&quot;&gt;Eclipse Collections&lt;/a&gt;. I am the creator of Eclipse Collections and am still an active Project Lead and Committer for the project at the &lt;a href=&quot;https://www.eclipse.org/&quot;&gt;Eclipse Foundation&lt;/a&gt;, so that should help explain why I write about it.&lt;/p&gt;&lt;p&gt;My top blog in 2017 was “Nine Features in Eclipse Collections 9.0”.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://medium.com/@donraab/nine-features-in-eclipse-collections-9-0-a2ca97dfdf74&quot;&gt;Nine Features in Eclipse Collections 9.0&lt;/a&gt;&lt;/p&gt;&lt;p&gt;My personal favorite blog in 2017 was “Preposition Preference”.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://medium.com/@donraab/preposition-preference-1f1c709b098b&quot;&gt;Preposition Preference&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;2018 — Finding My Way&lt;/h3&gt;&lt;p&gt;In 2018 was nominated and selected as a Java Champion. I was humbled and honored to be selected into this group of amazingly talented and respected Java luminaries.&lt;/p&gt;&lt;p&gt;My top blog in 2018 was “Ten reasons to use Eclipse Collections”.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://medium.com/oracledevs/ten-reasons-to-use-eclipse-collections-91593104af9d&quot;&gt;Ten reasons to use Eclipse Collections&lt;/a&gt;&lt;/p&gt;&lt;p&gt;My personal favorite blog in 2018 was “The 4am Jamestown-Scotland ferry and other optimization strategies”.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://medium.com/@donraab/the-4am-jamestown-scotland-ferry-and-other-optimization-strategies-66365ac415ef&quot;&gt;The 4am Jamestown-Scotland ferry and other optimization strategies&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;2019 — Continuing to Tell My Story&lt;/h3&gt;&lt;p&gt;I hope to share more about myself and my general views on software development in 2019. I hope to write some blogs about the Smalltalk programming language and environment. I will keep blogging about Eclipse Collections and Java as well I’m sure, especially as we look to the future after the 10.0 release. Java has been changing a lot since Java 8 was released. There is a lot of excitement again around this now twenty four year old programming language.&lt;/p&gt;&lt;p&gt;My top blog in 2019 so far is “Eclipse Collections 10.0 Released”.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://medium.com/oracledevs/eclipse-collections-10-0-released-49bae6a4b4c6&quot;&gt;Eclipse Collections 10.0 Released&lt;/a&gt;&lt;/p&gt;&lt;p&gt;My personal favorite blog so far in 2019 is “Graduating from Minimal to Rich Java APIs”.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://medium.com/oracledevs/graduating-from-minimal-to-rich-java-apis-c50192c8322f&quot;&gt;Graduating from Minimal to Rich Java APIs&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;On to 2020 — Finding More Bloggers&lt;/h3&gt;&lt;p&gt;I’m heading to Oracle CodeOne in a few weeks to give a talk, meet with old friends, hopefully make some new friends, and spend time teaching and learning as much as I can. I have a new sense of community and purpose since I was selected as a Java Champion. I want to help more bloggers find their voices. It is hard to write, and very hard to write regularly, but it is so critically important to leave a bit of what we know to the current and future generations of developers to learn from.&lt;/p&gt;&lt;p&gt;Thank you for taking the time to read my blogs. I hope you enjoy them and learn something useful from them now and again.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/eclipse/eclipse-collections&quot;&gt;&lt;em&gt;Eclipse Collections&lt;/em&gt;&lt;/a&gt;&lt;em&gt; is open for &lt;/em&gt;&lt;a href=&quot;https://github.com/eclipse/eclipse-collections/blob/master/CONTRIBUTING.md&quot;&gt;&lt;em&gt;contributions&lt;/em&gt;&lt;/a&gt;&lt;em&gt;. If you like the library, you can let us know by starring it on GitHub.&lt;/em&gt;&lt;/p&gt;&lt;img height=&quot;1&quot; src=&quot;https://medium.com/_/stat?event=post.clientViewed&amp;amp;referrerSource=full_rss&amp;amp;postId=15dbbe422f60&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Fri, 09 Aug 2019 03:53:16 +0000</pubDate>
+</item>
+<item>
+	<title>Eclipse Announcements: Community Day and Community Evening at EclipseCon Europe 2019</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/qAx-vee0aeM/community-day-and-community-evening-eclipsecon-europe-2019</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/qAx-vee0aeM/community-day-and-community-evening-eclipsecon-europe-2019</link>
+	<description>Learn how you can help us plan Community Day and the new Community Evening this year at EclipseCon Europe!&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/qAx-vee0aeM&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Wed, 07 Aug 2019 20:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Eclipse Announcements: Update for Jakarta EE community: August 2019</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/lDOc9lCRRDY/update-jakarta-ee-community-august-2019</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/lDOc9lCRRDY/update-jakarta-ee-community-august-2019</link>
+	<description>There's a lot happening in the Jakarta EE ecosystem so if you want to get a richer insight into Jakarta EE, read on.&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/lDOc9lCRRDY&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Wed, 07 Aug 2019 20:00:00 +0000</pubDate>
+</item>
+<item>
 	<title>Tanja Obradovic: Update for Jakarta EE community: August 2019</title>
 	<guid isPermaLink="false">6722 at https://blogs.eclipse.org</guid>
 	<link>https://blogs.eclipse.org/post/tanja-obradovic/update-jakarta-ee-community-august-2019</link>
@@ -279,22 +447,6 @@ I have started work on it now and will work on that for the last two weeks.&lt;/
 	<pubDate>Thu, 01 Aug 2019 21:08:16 +0000</pubDate>
 </item>
 <item>
-	<title>Donald Raab: 10 Features in Eclipse Collections 10.0</title>
-	<guid isPermaLink="false">https://medium.com/p/b5529f41d448</guid>
-	<link>https://medium.com/oracledevs/10-features-in-eclipse-collections-10-0-b5529f41d448?source=rss-df39b86e9f04------2</link>
-	<description>&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/1024/1*vbhdWhe1m6M_SyqW2aZckg.png&quot; /&gt;&lt;figcaption&gt;The sun has set on the Eclipse Collections 10.0 release.&lt;/figcaption&gt;&lt;/figure&gt;&lt;h3&gt;My Top 10 List&lt;/h3&gt;&lt;p&gt;In this post, I will share my favorite ten features included in the &lt;a href=&quot;https://medium.com/oracledevs/eclipse-collections-10-0-released-49bae6a4b4c6?source=friends_link&amp;amp;sk=a94837d5317ce2863be2c259fee8db41&quot;&gt;Eclipse Collections 10.0 release&lt;/a&gt;.&lt;/p&gt;&lt;h3&gt;1. Stream for Primitive Lists&lt;/h3&gt;&lt;p&gt;Now you can call primitiveStream on primitive Lists. The method primitiveStream is available on Int, Long and DoubleLists.&lt;/p&gt;&lt;pre&gt;@Test&lt;br /&gt;public void primitiveListToPrimitiveStream()&lt;br /&gt;{&lt;br /&gt;    IntStream intStream1 =&lt;br /&gt;            IntLists.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.with(1, 2, 3, 4, 5)&lt;br /&gt;                    .primitiveStream();&lt;br /&gt;    IntStream intStream2 =&lt;br /&gt;            IntLists.&lt;strong&gt;&lt;em&gt;immutable&lt;/em&gt;&lt;/strong&gt;.with(1, 2, 3, 4, 5)&lt;br /&gt;                    .primitiveStream();&lt;/pre&gt;&lt;pre&gt;    LongStream longStream1 =&lt;br /&gt;            LongLists.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.with(1L, 2L, 3L, 4L, 5L)&lt;br /&gt;                    .primitiveStream();&lt;br /&gt;    LongStream longStream2 =&lt;br /&gt;            LongLists.&lt;strong&gt;&lt;em&gt;immutable&lt;/em&gt;&lt;/strong&gt;.with(1L, 2L, 3L, 4L, 5L)&lt;br /&gt;                    .primitiveStream();&lt;/pre&gt;&lt;pre&gt;    DoubleStream doubleStream1 =&lt;br /&gt;            DoubleLists.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.with(1.0, 2.0, 3.0, 4.0, 5.0)&lt;br /&gt;                    .primitiveStream();&lt;br /&gt;    DoubleStream doubleStream2 =&lt;br /&gt;            DoubleLists.&lt;strong&gt;&lt;em&gt;immutable&lt;/em&gt;&lt;/strong&gt;.with(1.0, 2.0, 3.0, 4.0, 5.0)&lt;br /&gt;                    .primitiveStream();&lt;br /&gt;}&lt;/pre&gt;&lt;h3&gt;2. toMap with a target Map&lt;/h3&gt;&lt;p&gt;The method toMap has been overloaded to allow a target map to be passed in as a parameter.&lt;/p&gt;&lt;pre&gt;@Test&lt;br /&gt;public void toMapWithTarget()&lt;br /&gt;{&lt;br /&gt;    MutableList&amp;lt;Integer&amp;gt; list =&lt;br /&gt;            Lists.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.with(1, 2, 3, 4, 5);&lt;/pre&gt;&lt;pre&gt;    Map&amp;lt;String, Integer&amp;gt; map =&lt;br /&gt;            list.toMap(String::&lt;em&gt;valueOf&lt;/em&gt;,&lt;br /&gt;                       each -&amp;gt; each,&lt;br /&gt;                       new LinkedHashMap&amp;lt;&amp;gt;());&lt;/pre&gt;&lt;pre&gt;    Map&amp;lt;String, Integer&amp;gt; expected = new LinkedHashMap&amp;lt;&amp;gt;();&lt;br /&gt;    expected.put(&lt;strong&gt;&quot;1&quot;&lt;/strong&gt;, 1);&lt;br /&gt;    expected.put(&lt;strong&gt;&quot;2&quot;&lt;/strong&gt;, 2);&lt;br /&gt;    expected.put(&lt;strong&gt;&quot;3&quot;&lt;/strong&gt;, 3);&lt;br /&gt;    expected.put(&lt;strong&gt;&quot;4&quot;&lt;/strong&gt;, 4);&lt;br /&gt;    expected.put(&lt;strong&gt;&quot;5&quot;&lt;/strong&gt;, 5);&lt;/pre&gt;&lt;pre&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, map);&lt;br /&gt;}&lt;/pre&gt;&lt;h3&gt;3. RichIterable toBiMap&lt;/h3&gt;&lt;p&gt;With Eclipse Collections 10.0, you can now convert any RichIterable to a BiMap.&lt;/p&gt;&lt;pre&gt;@Test&lt;br /&gt;public void toBiMap()&lt;br /&gt;{&lt;br /&gt;    MutableBiMap&amp;lt;String, Integer&amp;gt; expected = &lt;br /&gt;      BiMaps.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.with(&lt;strong&gt;&quot;1&quot;&lt;/strong&gt;, 1, &lt;strong&gt;&quot;2&quot;&lt;/strong&gt;, 2, &lt;strong&gt;&quot;3&quot;&lt;/strong&gt;, 3);&lt;/pre&gt;&lt;pre&gt;    MutableBiMap&amp;lt;String, Integer&amp;gt; biMap = &lt;br /&gt;      Lists.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.with(1, 2, 3).toBiMap(String::&lt;em&gt;valueOf&lt;/em&gt;, i -&amp;gt; i);&lt;/pre&gt;&lt;pre&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, biMap);&lt;br /&gt;}&lt;/pre&gt;&lt;h3&gt;4. fromStream on Collection Factories&lt;/h3&gt;&lt;p&gt;We can now construct a Collection from a Stream using fromStream on each of the Collection factories for List, Set, Bag, and Stack.&lt;/p&gt;&lt;pre&gt;@Test&lt;br /&gt;public void fromStreamOnCollectionFactories()&lt;br /&gt;{&lt;br /&gt;    MutableList&amp;lt;Integer&amp;gt; &lt;br /&gt;        list = Lists.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.fromStream(Stream.&lt;em&gt;of&lt;/em&gt;(1, 2, 3, 4, 5));&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(&lt;br /&gt;        Lists.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.with(1, 2, 3, 4, 5), list);&lt;/pre&gt;&lt;pre&gt;    MutableSet&amp;lt;Integer&amp;gt; set = &lt;br /&gt;        Sets.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.fromStream(Stream.&lt;em&gt;of&lt;/em&gt;(1, 2, 3, 4, 5));&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(&lt;br /&gt;        Sets.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.with(1, 2, 3, 4, 5), set);&lt;/pre&gt;&lt;pre&gt;    MutableBag&amp;lt;Integer&amp;gt; bag = &lt;br /&gt;        Bags.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.fromStream(Stream.&lt;em&gt;of&lt;/em&gt;(1, 2, 3, 4, 5));&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(&lt;br /&gt;        Bags.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.with(1, 2, 3, 4, 5), bag);&lt;/pre&gt;&lt;pre&gt;    MutableStack&amp;lt;Integer&amp;gt; stack = &lt;br /&gt;        Stacks.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.fromStream(Stream.&lt;em&gt;of&lt;/em&gt;(1, 2, 3, 4, 5));&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(&lt;br /&gt;        Stacks.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.with(1, 2, 3, 4, 5), stack);&lt;br /&gt;}&lt;/pre&gt;&lt;h3&gt;5. MutableMultimap getIfAbsentPutAll&lt;/h3&gt;&lt;p&gt;The method getIfAbsentPutAll on a MutableMultimap is equivalent to getIfAbsentPut on a MutableMap. The difference is that with a Multimap you can put in multiple values.&lt;/p&gt;&lt;pre&gt;@Test&lt;br /&gt;public void getIfAbsentPutAll()&lt;br /&gt;{&lt;br /&gt;    MutableListMultimap&amp;lt;Integer, Integer&amp;gt; multimap =&lt;br /&gt;            Multimaps.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.list.with(2, 1);&lt;/pre&gt;&lt;pre&gt;    ImmutableList&amp;lt;Integer&amp;gt; defaultValue = &lt;br /&gt;            Lists.&lt;strong&gt;&lt;em&gt;immutable&lt;/em&gt;&lt;/strong&gt;.with(1, 2, 3);&lt;br /&gt;    MutableList&amp;lt;Integer&amp;gt; oneValue = &lt;br /&gt;            multimap.getIfAbsentPutAll(1, defaultValue);&lt;br /&gt;    MutableList&amp;lt;Integer&amp;gt; twoValue = &lt;br /&gt;            multimap.getIfAbsentPutAll(2, defaultValue);&lt;/pre&gt;&lt;pre&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(defaultValue, oneValue);&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(Lists.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.with(1), twoValue);&lt;br /&gt;}&lt;/pre&gt;&lt;h3&gt;6. Bag collectWithOccurrences&lt;/h3&gt;&lt;p&gt;You can use this method to transform a collection using all of the unique items in the bag along with their counts. You specific an ObjectIntToObjectFunction to transform the items an their counts to some resulting object. In the following example, I will collect the items and their counts into ObjectIntPair instances.&lt;/p&gt;&lt;pre&gt;@Test&lt;br /&gt;public void collectWithOccurences()&lt;br /&gt;{&lt;br /&gt;    MutableBag&amp;lt;String&amp;gt; source =&lt;br /&gt;            Bags.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.with(&lt;strong&gt;&quot;1&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;2&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;2&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;3&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;3&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;3&quot;&lt;/strong&gt;);&lt;/pre&gt;&lt;pre&gt;    MutableBag&amp;lt;ObjectIntPair&amp;lt;String&amp;gt;&amp;gt; targetBag =&lt;br /&gt;            source.collectWithOccurrences(PrimitiveTuples::&lt;em&gt;pair&lt;/em&gt;);&lt;/pre&gt;&lt;pre&gt;    MutableBag&amp;lt;ObjectIntPair&amp;lt;String&amp;gt;&amp;gt; expected =&lt;br /&gt;            Bags.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.with(&lt;br /&gt;                    PrimitiveTuples.&lt;em&gt;pair&lt;/em&gt;(&lt;strong&gt;&quot;1&quot;&lt;/strong&gt;, 1),&lt;br /&gt;                    PrimitiveTuples.&lt;em&gt;pair&lt;/em&gt;(&lt;strong&gt;&quot;2&quot;&lt;/strong&gt;, 2),&lt;br /&gt;                    PrimitiveTuples.&lt;em&gt;pair&lt;/em&gt;(&lt;strong&gt;&quot;3&quot;&lt;/strong&gt;, 3));&lt;/pre&gt;&lt;pre&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, targetBag);&lt;br /&gt;}&lt;/pre&gt;&lt;h3&gt;7. Reduce / reduceIfEmpty for Primitive Iterables&lt;/h3&gt;&lt;p&gt;The method reduce will apply a two argument (long, int) function which returns a long for each element of the collection. This allows for a widening of the result type so as not to overflow on functions like sum. In the case of an empty collection, a NoSuchElementException will be thrown.&lt;/p&gt;&lt;pre&gt;@Test&lt;br /&gt;public void reducePrimitiveIterables()&lt;br /&gt;{&lt;br /&gt;    MutableIntList list =&lt;br /&gt;            IntLists.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.with(1, 2, 3, 4, 5);&lt;/pre&gt;&lt;pre&gt;    long sum = list.reduce(Long::&lt;em&gt;sum&lt;/em&gt;);&lt;/pre&gt;&lt;pre&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(15L, sum);&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(list.sum(), sum);&lt;/pre&gt;&lt;pre&gt;    Verify.&lt;em&gt;assertThrows&lt;/em&gt;(&lt;br /&gt;            NoSuchElementException.class,&lt;br /&gt;            ()-&amp;gt; IntLists.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.empty().reduce(Long::&lt;em&gt;sum&lt;/em&gt;));&lt;br /&gt;}&lt;/pre&gt;&lt;p&gt;If you would like to safely handle the case of empty, you can use reduceIfEmpty and specify a default value to return.&lt;/p&gt;&lt;pre&gt;@Test&lt;br /&gt;public void reduceIfEmptyPrimitiveIterables()&lt;br /&gt;{&lt;br /&gt;    MutableIntList list =&lt;br /&gt;            IntLists.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.with(1, 2, 3, 4, 5);&lt;/pre&gt;&lt;pre&gt;    long sum = list.reduceIfEmpty(Long::&lt;em&gt;sum&lt;/em&gt;, 0L);&lt;/pre&gt;&lt;pre&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(15L, sum);&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(list.sum(), sum);&lt;/pre&gt;&lt;pre&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(0L,&lt;br /&gt;            IntLists.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.empty()&lt;br /&gt;                    .reduceIfEmpty(Long::&lt;em&gt;sum&lt;/em&gt;, 0L));&lt;br /&gt;}&lt;/pre&gt;&lt;h3&gt;8. RichIterable countByEach&lt;/h3&gt;&lt;p&gt;The method countByEach is similar to groupByEach and flatCollect. All three take a Function which returns an Iterable. The result in the case of countByEach is a Bag. In the following example, I count all of the methods by their names for three classes. The count of methods will include overloads and overrides of the methods.&lt;/p&gt;&lt;pre&gt;@Test&lt;br /&gt;public void countByEach()&lt;br /&gt;{&lt;br /&gt;    MutableList&amp;lt;Class&amp;lt;?&amp;gt;&amp;gt; classes =&lt;br /&gt;            Lists.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.with(&lt;br /&gt;                    RichIterable.class,&lt;br /&gt;                    MutableList.class,&lt;br /&gt;                    ImmutableList.class);&lt;/pre&gt;&lt;pre&gt;    Bag&amp;lt;String&amp;gt; methodNames =&lt;br /&gt;            classes.countByEach(each -&amp;gt;&lt;br /&gt;                    ArrayAdapter.&lt;em&gt;adapt&lt;/em&gt;(each.getMethods())&lt;br /&gt;                            .collect(Method::getName));&lt;/pre&gt;&lt;pre&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(8, &lt;br /&gt;            methodNames.occurrencesOf(&lt;strong&gt;&quot;countByEach&quot;&lt;/strong&gt;));&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(16, &lt;br /&gt;            methodNames.occurrencesOf(&lt;strong&gt;&quot;groupByEach&quot;&lt;/strong&gt;));&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(2, &lt;br /&gt;            methodNames.occurrencesOf(&lt;strong&gt;&quot;sortThis&quot;&lt;/strong&gt;));&lt;br /&gt;}&lt;/pre&gt;&lt;h3&gt;9. Create Primitive Map from Iterable&lt;/h3&gt;&lt;p&gt;You can now create a primitive Map from an Iterable with two provided Functions. One Function is used to calculate the key, and the other is used to calculate the value. This method is very similar the method toMap on RichIterable. The difference is that it works with any primitive Map.&lt;/p&gt;&lt;pre&gt;@Test&lt;br /&gt;public void createPrimitiveMapFromIterable()&lt;br /&gt;{&lt;br /&gt;    Iterable&amp;lt;Integer&amp;gt; integers = Interval.&lt;em&gt;oneTo&lt;/em&gt;(5);&lt;br /&gt;    MutableIntIntMap map =&lt;br /&gt;            IntIntMaps.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.from(&lt;br /&gt;                    integers,&lt;br /&gt;                    key -&amp;gt; key,&lt;br /&gt;                    value -&amp;gt; value);&lt;/pre&gt;&lt;pre&gt;    MutableIntIntMap expected = IntIntMaps.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.empty()&lt;br /&gt;            .withKeyValue(1, 1)&lt;br /&gt;            .withKeyValue(2, 2)&lt;br /&gt;            .withKeyValue(3, 3)&lt;br /&gt;            .withKeyValue(4, 4)&lt;br /&gt;            .withKeyValue(5, 5);&lt;/pre&gt;&lt;pre&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(expected, map);&lt;br /&gt;}&lt;/pre&gt;&lt;h3&gt;10. Convert Iterable to Primitive Collections&lt;/h3&gt;&lt;p&gt;Before &lt;a href=&quot;https://github.com/eclipse/eclipse-collections&quot;&gt;Eclipse Collections&lt;/a&gt; 10.0, if you wanted to convert an &lt;em&gt;Iterable&lt;/em&gt; of boxed primitive types to a primitive &lt;em&gt;Collection &lt;/em&gt;(e.g. Integer -&amp;gt; int), you would have to first convert the &lt;em&gt;Iterable&lt;/em&gt; to a &lt;em&gt;Collection&lt;/em&gt; or a &lt;em&gt;Stream&lt;/em&gt;. In the case of a &lt;em&gt;Stream&lt;/em&gt;, you could then use one of the stock primitive &lt;em&gt;Collectors&lt;/em&gt; in &lt;em&gt;Collectors2&lt;/em&gt; to convert to a primitive &lt;em&gt;Collection&lt;/em&gt;. Now you can use the following factory methods to convert from &lt;em&gt;Iterable&lt;/em&gt; of some boxed value like &lt;em&gt;Integer&lt;/em&gt; to a primitive &lt;em&gt;Collection&lt;/em&gt;. This works for all of the boxed primitive types, across all supported primitive &lt;em&gt;Collection&lt;/em&gt; types.&lt;/p&gt;&lt;pre&gt;@Test&lt;br /&gt;public void convertFromIterableToPrimitiveCollection()&lt;br /&gt;{&lt;br /&gt;    Iterable&amp;lt;Integer&amp;gt; iterable = Interval.&lt;em&gt;oneTo&lt;/em&gt;(5);&lt;br /&gt;    IntInterval intInterval = IntInterval.&lt;em&gt;oneTo&lt;/em&gt;(5);&lt;br /&gt;&lt;br /&gt;    MutableIntList mIntList =&lt;br /&gt;            IntLists.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.withAll(iterable);&lt;br /&gt;    ImmutableIntList iIntList =&lt;br /&gt;            IntLists.&lt;strong&gt;&lt;em&gt;immutable&lt;/em&gt;&lt;/strong&gt;.withAll(iterable);&lt;br /&gt;&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(intInterval, mIntList);&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(intInterval, iIntList);&lt;br /&gt;&lt;br /&gt;    MutableIntSet mIntSet =&lt;br /&gt;            IntSets.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.withAll(iterable);&lt;br /&gt;    ImmutableIntSet iIntSet =&lt;br /&gt;            IntSets.&lt;strong&gt;&lt;em&gt;immutable&lt;/em&gt;&lt;/strong&gt;.withAll(iterable);&lt;br /&gt;&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(intInterval.toSet(), mIntSet);&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(intInterval.toSet(), iIntSet);&lt;br /&gt;&lt;br /&gt;    MutableIntBag mIntBag =&lt;br /&gt;            IntBags.&lt;strong&gt;&lt;em&gt;mutable&lt;/em&gt;&lt;/strong&gt;.withAll(iterable);&lt;br /&gt;    ImmutableIntBag iIntBag =&lt;br /&gt;            IntBags.&lt;strong&gt;&lt;em&gt;immutable&lt;/em&gt;&lt;/strong&gt;.withAll(iterable);&lt;br /&gt;&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(intInterval.toBag(), mIntBag);&lt;br /&gt;    Assert.&lt;em&gt;assertEquals&lt;/em&gt;(intInterval.toBag(), iIntBag);&lt;br /&gt;}&lt;/pre&gt;&lt;p&gt;I hope you enjoy all of the new features in &lt;a href=&quot;https://github.com/eclipse/eclipse-collections?source=post_page---------------------------&quot;&gt;Eclipse Collections&lt;/a&gt; 10.0!&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/eclipse/eclipse-collections?source=post_page---------------------------&quot;&gt;&lt;em&gt;Eclipse Collections&lt;/em&gt;&lt;/a&gt;&lt;em&gt; is open for &lt;/em&gt;&lt;a href=&quot;https://github.com/eclipse/eclipse-collections/blob/master/CONTRIBUTING.md?source=post_page---------------------------&quot;&gt;&lt;em&gt;contributions&lt;/em&gt;&lt;/a&gt;&lt;em&gt;. If you like the library, you can let us know by starring it on GitHub.&lt;/em&gt;&lt;/p&gt;&lt;img height=&quot;1&quot; src=&quot;https://medium.com/_/stat?event=post.clientViewed&amp;amp;referrerSource=full_rss&amp;amp;postId=b5529f41d448&quot; width=&quot;1&quot; /&gt;&lt;hr /&gt;&lt;p&gt;&lt;a href=&quot;https://medium.com/oracledevs/10-features-in-eclipse-collections-10-0-b5529f41d448&quot;&gt;10 Features in Eclipse Collections 10.0&lt;/a&gt; was originally published in &lt;a href=&quot;https://medium.com/oracledevs&quot;&gt;Oracle Developers&lt;/a&gt; on Medium, where people are continuing the conversation by highlighting and responding to this story.&lt;/p&gt;</description>
-	<pubDate>Thu, 01 Aug 2019 05:19:36 +0000</pubDate>
-</item>
-<item>
-	<title>EclipseCon Europe 2019: Early Selection: A tale of Rust, the ESP32 and IoT</title>
-	<guid isPermaLink="false">2146 at https://www.eclipsecon.org</guid>
-	<link>https://www.eclipsecon.org/europe2019/news/early-selection-tale-rust-esp32-and-iot</link>
-	<description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;&lt;em&gt;Jens Reimann takes us on a tour of the Rust programming language in his talk, A tale of Rust, the ESP32 and IoT.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Rust is an amazing new programing language. It finds many more programming issues during compile time than most other languages. It is performant, natively compiled. It is also developed in a true, open source, community fashion. With that, it creates an amazing ecosystem around it.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-news-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://www.eclipsecon.org/europe2019/news/early-selection-tale-rust-esp32-and-iot&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;img-responsive block-center&quot; height=&quot;250&quot; src=&quot;https://www.eclipsecon.org/sites/default/files/styles/solstice_news_-_default_-_thumbnail/public/news/JensReimann600x600.png?itok=lOFgNQ7Y&quot; width=&quot;250&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
-	<pubDate>Wed, 31 Jul 2019 15:38:08 +0000</pubDate>
-</item>
-<item>
 	<title>Chris Aniszczyk: KubeCon Shanghai 2019: Cloud Native at China Scale</title>
 	<guid isPermaLink="false">https://www.aniszczyk.org/?p=4295</guid>
 	<link>https://www.aniszczyk.org/2019/07/29/kubecon-shanghai-2019-cloud-native-at-china-scale/</link>
@@ -356,13 +508,6 @@ I have started work on it now and will work on that for the last two weeks.&lt;/
 	<author>noreply@blogger.com (Andrey Loskutov)</author>
 </item>
 <item>
-	<title>Eclipse Announcements: Eclipse Newsletter - July 2019: Research@Eclipse</title>
-	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/9DmS2If29Ec/eclipse-newsletter-july-2019-researcheclipse</guid>
-	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/9DmS2If29Ec/eclipse-newsletter-july-2019-researcheclipse</link>
-	<description>Read Gabriela Motroc's latest blog on the Eclipse Newsletter: Research@Eclipse&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/9DmS2If29Ec&quot; width=&quot;1&quot; /&gt;</description>
-	<pubDate>Fri, 26 Jul 2019 13:45:00 +0000</pubDate>
-</item>
-<item>
 	<title>vert.x project: Eclipse Vert.x 4 milestone 1 released!</title>
 	<guid isPermaLink="true">https://vertx.io/blog/eclipse-vert-x-4-milestone-1-released</guid>
 	<link>https://vertx.io/blog/eclipse-vert-x-4-milestone-1-released</link>
@@ -419,13 +564,6 @@ expect more milestones to outline the progress of the effort.&lt;/p&gt;
 &lt;p&gt;Thatâ€™s it! Happy coding and see you soon on our user or dev &lt;a href=&quot;https://vertx.io/community&quot;&gt;channels&lt;/a&gt;.&lt;/p&gt;
 &lt;/article&gt;</description>
 	<pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
-</item>
-<item>
-	<title>Eclipse Announcements: The latest Eclipse Newsletter had been released: Research@Eclipse</title>
-	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/qmbrXeiVn0o/</guid>
-	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/qmbrXeiVn0o/</link>
-	<description>We are very proud to offer you an introduction to most of the research projects we're involved in and the Eclipse Foundation!&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/qmbrXeiVn0o&quot; width=&quot;1&quot; /&gt;</description>
-	<pubDate>Thu, 25 Jul 2019 14:45:00 +0000</pubDate>
 </item>
 <item>
 	<title>Mat Booth: The State of Java in Flathub</title>
@@ -534,68 +672,6 @@ list of &lt;a href=&quot;https://github.com/vert-x3/wiki/wiki/3.8.0-Deprecations
 &lt;p&gt;The release artifacts have been deployed to &lt;a href=&quot;http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22io.vertx%22%20AND%20v%3A%223.8.0%22&quot;&gt;Maven Central&lt;/a&gt; and you can get the distribution on &lt;a href=&quot;https://bintray.com/vertx/downloads/distribution/3.8.0/view&quot;&gt;Bintray&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;That’s it! Happy coding and see you soon on our user or dev &lt;a href=&quot;https://vertx.io/community&quot;&gt;channels&lt;/a&gt;.&lt;/p&gt;
 &lt;/article&gt;</description>
-	<pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
-</item>
-<item>
-	<title>Jonas Hungershausen: Dartboard: Icons, bug fixes &amp; a new committer</title>
-	<guid isPermaLink="true">https://jonas-jonas.dev/posts/dartboard-third-update/</guid>
-	<link>https://jonas-jonas.dev/posts/dartboard-third-update/</link>
-	<description>&lt;p&gt;Dart icon, bug fixes and a new committer. Dartboard is getting better and better every week. So what's new?&lt;/p&gt;
-&lt;h1&gt;Eclipse Marketplace&lt;/h1&gt;
-&lt;p&gt;Installing the plug-in typically involved adding an update site, downloading its content and then installing the plug-in.
-This process is quite tedious.
-That's why I added the plug-in to the &lt;a href=&quot;https://marketplace.eclipse.org/content/dartboard&quot;&gt;Eclipse Marketplace&lt;/a&gt;, which is much nicer to use.&lt;/p&gt;
-&lt;p&gt;To install the plug-in from the marketplace make sure you have the &lt;a href=&quot;https://www.eclipse.org/mpc/&quot;&gt;Marketplace client&lt;/a&gt; installed.
-Open the &lt;a href=&quot;https://marketplace.eclipse.org/content/dartboard&quot;&gt;marketplace entry&lt;/a&gt; and drag and drop the install button into your running Eclipse instance.
-Alternatively, you can open the Marketplace client from the &lt;strong&gt;Help&amp;gt;Eclipse Marketplace...&lt;/strong&gt; menu and search for &lt;strong&gt;Dartboard&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;In the future you will also receive notifications about updates and an option to update the plug-in.&lt;/p&gt;
-&lt;h1&gt;Dart Icon&lt;/h1&gt;
-&lt;p&gt;Since using the icon of the Dart language requires to first ask permission from Google, it took some time to use the logo in the project.
-Now however we are allowed to use the icon and I have added it to the code base.
-It is now shown in many places like launch configurations or file creation wizards.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;Dart logo on New Project Shortcut&quot; src=&quot;https://jonas-jonas.dev/posts/assets/new-project-shortcut.png&quot; /&gt;&lt;/p&gt;
-&lt;h1&gt;Property Testers Instead of Project Natures&lt;/h1&gt;
-&lt;p&gt;In my last post I wrote about the usage of project natures in the plug-in.
-After reevaluating this, we came to the conclusion that it is better to use property testers instead.
-The reason for this is, that project natures are written into the project configuration file.
-One drawback to this is that a project nature is extremely Eclipse specific.
-This means that just importing a project might not enable all features.&lt;/p&gt;
-&lt;p&gt;To curb with this problem, I removed the project natures again and added a &lt;code&gt;PropertyTester&lt;/code&gt; that checks for the existence of a &lt;code&gt;pubspec.yaml&lt;/code&gt; file or any file with the &lt;code&gt;.dart&lt;/code&gt; file extension.&lt;/p&gt;
-&lt;h1&gt;Dart Console&lt;/h1&gt;
-&lt;p&gt;The first implementation of the Dart console, that was used to display output from Dart programs, was very basic.
-It did not allow to cancel the currently running program and did not remove itself when it wasn't needed anymore.&lt;/p&gt;
-&lt;p&gt;It turns out that the Eclipse IDE APIs actually allow to use a &lt;code&gt;ProcessConsole&lt;/code&gt; for these tasks.
-Using the Console just requires to add a process.
-It will take care of life cycling and lets the user cancel longer running tasks.&lt;/p&gt;
-&lt;h1&gt;Preference Page&lt;/h1&gt;
-&lt;p&gt;The Dart preference was also heavily improved.
-Firstly, on first starts of the IDE with the plug-in installed it automatically tries to detect the location of the Dart SDK that is on the path of the host system.
-If it can't find an SDK, a warning will be shown.&lt;/p&gt;
-&lt;p&gt;Secondly, the validations on the preference page now validate if the entered location is actually a valid Dart SDK location.
-If not the &quot;Apply&quot; button will not be enabled.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;Preference Page Validation&quot; src=&quot;https://jonas-jonas.dev/posts/assets/preference-validation-after.gif&quot; /&gt;&lt;/p&gt;
-&lt;h1&gt;Custom Methods in LSP4J&lt;/h1&gt;
-&lt;p&gt;The Dart analysis server uses some custom methods when communicating with the client.
-To handle these however a custom handler for each method is needed.
-If no handler is available LSP4J will throw an error.&lt;/p&gt;
-&lt;p&gt;The custom method from the Dart analysis server was &lt;code&gt;$/analyzerStatus&lt;/code&gt;.
-The &lt;code&gt;$&lt;/code&gt; at the beginning indicates that it's a custom method.
-The &lt;code&gt;analyzerStatus&lt;/code&gt; method is used to notify the client of the current analyzer status (e.g. if the server is currently analyzing or not).
-This information could be used to indicate the status in the UI in the future.
-For now it was sufficient to just have a handler that essentially suppressed the error message.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&quot;https://github.com/eclipse/dartboard/issues/35&quot;&gt;dartboard#35&lt;/a&gt; for more details.&lt;/p&gt;
-&lt;h1&gt;New Committer&lt;/h1&gt;
-&lt;p&gt;I would also like to mention that the project now has its first committer: Lakshminarayana Nekkanti.
-After he raised a few pull request in the past weeks, we decided that it would be very nice to have him as a committer.&lt;/p&gt;
-&lt;p&gt;Thanks Lakshminarayana for your excellent work and code reviews.&lt;/p&gt;
-&lt;h1&gt;Licenses and Signing&lt;/h1&gt;
-&lt;p&gt;Artifacts from our build server are now signed by the Eclipse Foundation.
-Essentially this means you can be sure that the artifact you are downloading is in fact our plug-in.
-Upon installation the licenses (EPL2) are now also shown.&lt;/p&gt;
-&lt;h1&gt;Conclusion&lt;/h1&gt;
-&lt;p&gt;As this post marks half of my time with Google Summer of Code, there is only one and a half month to go.
-There are still some things left to do and I'm looking forward to increasing the plug-ins user count and its features in the next weeks.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Dart and the related logo are trademarks of Google LLC. We are not endorsed by or affiliated with Google LLC.&lt;/em&gt;&lt;/p&gt;</description>
 	<pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
 </item>
 <item>
@@ -774,13 +850,6 @@ There are still some things left to do and I'm looking forward to increasing the
 &lt;p&gt;Download the Business of Open Source eBook today to learn how to innovate with confidence by giving your mission-critical projects a proper home at the Eclipse Foundation. Thank you to Deborah Bryant, Todd Moore, and Tyler Jewell for contributing their insights and expertise to the eBook. Let us know what you think and be sure to join the entrepreneurial open source conversation on Twitter @EclipseFdn and share your open source success story using #entropeneur.&lt;/p&gt;
 &lt;p&gt;To learn more about the business value of open collaboration at the Eclipse Foundation, visit entropeneur.org to explore our other commercial open source resources, including video success stories featuring Eclipse community members. We’ve also developed an &lt;a href=&quot;https://www.eclipse.org/org/value/public/pdf/business_of_open_source_infographic.pdf&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;infographic&lt;/a&gt; summarizing the benefits and advantages of participating in an open source foundation, and &lt;a href=&quot;https://www.eclipse.org/org/value/public/pdf/business_of_open_source_slide_deck.pdf&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;slide deck&lt;/a&gt; that you can use to make the case for joining the Eclipse Foundation.&lt;/p&gt;</description>
 	<pubDate>Mon, 15 Jul 2019 14:40:45 +0000</pubDate>
-</item>
-<item>
-	<title>Maximilian and Jonas: EMF Forms 1.21.0 Feature: Multi Edit for Tables and Trees</title>
-	<guid isPermaLink="false">https://eclipsesource.com/?p=41854</guid>
-	<link>https://eclipsesource.com/blogs/2019/07/15/emf-forms-1-21-0-feature-multi-edit-for-tables-and-trees/</link>
-	<description>&lt;p&gt;EMF Forms makes it easy to create forms that are able to edit your data based on an EMF model. To...&lt;/p&gt;&lt;p&gt;The post &lt;a href=&quot;https://eclipsesource.com/blogs/2019/07/15/emf-forms-1-21-0-feature-multi-edit-for-tables-and-trees/&quot; rel=&quot;nofollow&quot;&gt;EMF Forms 1.21.0 Feature: Multi Edit for Tables and Trees&lt;/a&gt; appeared first on &lt;a href=&quot;https://eclipsesource.com&quot; rel=&quot;nofollow&quot;&gt;EclipseSource&lt;/a&gt;.&lt;/p&gt;</description>
-	<pubDate>Mon, 15 Jul 2019 10:29:17 +0000</pubDate>
 </item>
 <item>
 	<title>PapyrusUML: Papyrus SysML 1.6  available from the Eclipse Marketplace.</title>
@@ -1001,13 +1070,6 @@ client.connect().get();&lt;/code&gt;&lt;/pre&gt;
 	<link>https://medium.com/@dougschaefer/current-state-of-c-c-language-servers-ab87e6fc186b?source=rss-8f7a70438965------2</link>
 	<description>&lt;h3&gt;A Bit of History&lt;/h3&gt;&lt;p&gt;When I joined the Eclipse CDT project back in 2002 (yeah, it’s been a long time), I was working on modeling tools for “real time”, or more accurately, embedded reactive systems. Communicating state machines. I wrote code generators that generated C and C++ from &lt;a href=&quot;https://en.wikipedia.org/wiki/Real-Time_Object-Oriented_Modeling&quot;&gt;ROOM models&lt;/a&gt; and then eventually &lt;a href=&quot;https://www.omg.org/news/meetings/workshops/presentations/embedded-rt2002/04-1_Selic-Watson_RT-UML.tutorial&quot;&gt;UML-RT&lt;/a&gt;. ROOM was way better by the way and easier to generate for because it was more semantically complete and well defined. That objective is key later in this story.&lt;/p&gt;&lt;p&gt;We had the vision to integrate our modeling tools more closely with Integrated Development Environments. We started looking at Visual Studio but Eclipse was the young up and comer. That and IBM bought us, Rational by that point, and had already bought OTI who built Eclipse so it was a natural fit. And we were all in Ottawa. And by chance, Ottawa-based QNX had already written a C/C++ IDE based on Eclipse and were open sourcing it and it was perfect for our customers as well. It’s amazing how that all happened and led to my life as CDT Doug.&lt;/p&gt;&lt;p&gt;Our first order of business was to help the CDT become an industry class C/C++ IDE and become a foundation for integrating our modeling tools. Since we wanted to be able to generate model elements from code, it required we have accurate C and C++ parsers and indexers. No one figured we could do it, but we were able to put together a somewhat decent system written in Java in the org.eclipse.cdt.core plug-in.&lt;/p&gt;&lt;h3&gt;Scaling is Hard&lt;/h3&gt;&lt;p&gt;However, as the community started to try it out on real projects, especially ones of a significant size, we started to run into pretty massive performance problems with the indexer. We were essentially doing full builds of the user’s projects and storing the results in a string table. On large projects, builds take a long time. But users expect that and put up with it because they really need those binaries it produces. They don’t have the same patience for their IDEs building indexes the don’t really see and we paid a pretty high price for that.&lt;/p&gt;&lt;p&gt;As a solution, I wondered if we could store the symbol information that we were gathering in a way that we could load it up from disk as we were parsing other files and plug the symbol info into the AST the same way we do symbols normally. This would allow us to parse header files once and reuse the results, similar to how precompiled headers work. The price you pay is in accuracy since some systems parse header files multiple times with different macro settings. But my guess was that it wouldn’t be that bad.&lt;/p&gt;&lt;p&gt;It was hard to convince my team at IBM Rational to take this road. Accuracy was king for our modeling tools. But when I moved to join QNX, I decide to forgo that requirement and give this “fast indexer” strategy a go. And the rest is history. Performance on large projects was an order of magnitude faster. Incremental indexing of files as they were saved isn’t even noticeable. It was a huge success and my proudest contribution to the CDT. And I was even better when other community members handed us their expertise to make the accuracy better and better so you barely notice that at all either.&lt;/p&gt;&lt;h3&gt;C++ Rises from the “Dead”&lt;/h3&gt;&lt;p&gt;Move the clock a decade later and we started running into a problem. The C++ standards community has new life and are adding a tonne of new features at a three year cadence. The CDT community has long lost most of the experts that build the original parsers. Lucky for us a new crop of contributors has come along and are doing heroes work to keep up. But it’s getting harder and harder. One thing we benefit from is how slow embedded developers, the majority of users of CDT, are to adopt the new standards. It gives us time, but not forever. We need to find a better way.&lt;/p&gt;&lt;p&gt;Then along came the Language Server Protocol and a small handful of language servers that do C/C++. I’ve investigated four of them. Three of them are based on llvm and clang. One of them is in tree with llvm and clang in clang-tools-extra, i.e., clangd. The other two are projects that use libclang with parts of the tree, i.e., cquery and ccls. Those two projects are what I call “one person projects” and with cquery at least, that person found something else to do last November. Beware of the one person project.&lt;/p&gt;&lt;h3&gt;clangd&lt;/h3&gt;&lt;p&gt;I’ve spent a lot of time with clangd when experimenting with Visual Studio Code. For what it does, clangd is very accurate and really fast. It uses compile_commands.json files to find out what source files are built and what compiler and command lines they use. I’ve had to fork the tree to add in support for discovering compilers it doesn’t know about, but that was pretty easy to put together. It gives great content assist and you get the benefit of clang’s awesome compilation error diagnostics as you type. It shows a lot of promise.&lt;/p&gt;&lt;p&gt;However clangd for the longest time lacked an indexer. When you search for references it only finds them in files you have opened previously. The thought as I understand it is that you use another process to build the index and that is usually done at build time. However, not all users have such an environment set up so having an index created by the IDE is a mandatory feature. Now, clangd did eventually get an indexer but it does what the old CDT indexer did and completely parses the source three. That predictably takes forever on large projects and I don’t think users have the appetite to take a huge step backwards like that.&lt;/p&gt;&lt;h3&gt;IntelliSense&lt;/h3&gt;&lt;p&gt;While waiting for the right solution to arrive for clangd, I thought I’d give the Microsoft C/C++ Tools for VS Code a try. My initial experience was quite surprising. It actually worked well with a gnu tools cross compiler project I used for testing. You have to teach it how to parse your code using a magic JSON file, which fits right in with the rest of VS Code. It’s able to pick out the default include path when you point it at your compiler. It has a MI support for debugging, though no built-in support for remote debugging but that was hackable. It seemed like a reasonable alternative, at least for VS Code.&lt;/p&gt;&lt;p&gt;However when I tried it with one of our production projects it quickly fell apart. It does a great job trying to figure out include paths, similar to the heuristics we use in CDT. That includes things like treating all the folders in your workspace as a potential include path entry. But it tended to make mistakes. It even has support for compile_commands.json files so I could tell it the command lines that were use. It did better but still tried to do too much and gave incorrect results.&lt;/p&gt;&lt;p&gt;That and it doesn’t have an index yet either. One is coming soon, but if it can’t figure out how to parse my files correctly, it’s not going to be a great experience. Still a lot of work to do there.&lt;/p&gt;&lt;h3&gt;Where do we go from here?&lt;/h3&gt;&lt;p&gt;As it stands today, at least from a CDT perspective, there really isn’t a language server solution that comes near what we have in CDT. Yes, some things are better. Both these language servers are using real parsers to parse the code. (or at least clangd is. Microsoft’s, of course, is closed source so I can only assume). They give really good content assist and error diagnostics and open declaration works. But without a usable indexer, you don’t get accurate symbol references. And I haven’t even mentioned refactoring which CDT has and which is not even suggested in the language server protocol.&lt;/p&gt;&lt;p&gt;So if all your doing is typing in code, the new language servers are great. But if you need to do some code mining to understand the code before you change it, you’re out of luck. The good news is that we are continuing to see investment in them so who knows. But then, maybe the CDT parsers catch up with the language standards before these other language servers grow great indexers making the whole thing moot. I wouldn’t bet against that right now.&lt;/p&gt;&lt;img height=&quot;1&quot; src=&quot;https://medium.com/_/stat?event=post.clientViewed&amp;amp;referrerSource=full_rss&amp;amp;postId=ab87e6fc186b&quot; width=&quot;1&quot; /&gt;</description>
 	<pubDate>Fri, 28 Jun 2019 19:59:53 +0000</pubDate>
-</item>
-<item>
-	<title>Maximilian and Jonas: EclipseSource Oomph Profile – updated to 2019-06</title>
-	<guid isPermaLink="false">https://eclipsesource.com/?p=41826</guid>
-	<link>https://eclipsesource.com/blogs/2019/06/27/eclipsesource-oomph-profile-updated-to-2019-06/</link>
-	<description>&lt;p&gt;Last week, Eclipse 2019-06 has been released, a new version of the Eclipse IDE and platform. The first notable improvement is...&lt;/p&gt;&lt;p&gt;The post &lt;a href=&quot;https://eclipsesource.com/blogs/2019/06/27/eclipsesource-oomph-profile-updated-to-2019-06/&quot; rel=&quot;nofollow&quot;&gt;EclipseSource Oomph Profile – updated to 2019-06&lt;/a&gt; appeared first on &lt;a href=&quot;https://eclipsesource.com&quot; rel=&quot;nofollow&quot;&gt;EclipseSource&lt;/a&gt;.&lt;/p&gt;</description>
-	<pubDate>Thu, 27 Jun 2019 08:17:34 +0000</pubDate>
 </item>
 <item>
 	<title>itemis: Graphical Editing Framework (GEF) 5.1.0 Release</title>
@@ -1871,12 +1933,8 @@ The Eclipse Ditto team&lt;/p&gt;</description>
 
 &lt;p&gt;For example, all contributors must be covered by the &lt;a href=&quot;https://www.eclipse.org/legal/ECA.php&quot;&gt;Eclipse Foundation Contributor Agreement&lt;/a&gt; (ECA) and they must include a “Signed-off-by” footer in commit messages. When contributing to an Eclipse Foundation Specification Project, contributors must be covered with version 3.0.0 or greater of the ECA.&lt;/p&gt;
 
-
 &lt;figure class=&quot;thumbnail&quot;&gt;
-    
-        &lt;img src=&quot;https://www.chrisguindon.com/post/github-eclipse-eca-validation-service/validation-feedback.jpg&quot; /&gt;
-    
-    
+    &lt;img src=&quot;https://www.chrisguindon.com/post/github-eclipse-eca-validation-service/validation-feedback.jpg&quot; /&gt; 
 &lt;/figure&gt;
 
 
@@ -1890,12 +1948,8 @@ The Eclipse Ditto team&lt;/p&gt;</description>
 
 &lt;p&gt;Finally, we made some improvements to our “details” page. We added a “revalidate” button to allow Eclipse users to trigger a revalidation without pushing new changes to the pull-request and we added some useful links to allow users to return to GitHub or to sign the &lt;a href=&quot;https://accounts.eclipse.org/user/eca&quot;&gt;ECA&lt;/a&gt;.&lt;/p&gt;
 
-
 &lt;figure class=&quot;thumbnail&quot;&gt;
-    
-        &lt;img src=&quot;https://www.chrisguindon.com/post/github-eclipse-eca-validation-service/details-page.jpg&quot; /&gt;
-    
-    
+    &lt;img src=&quot;https://www.chrisguindon.com/post/github-eclipse-eca-validation-service/details-page.jpg&quot; /&gt; 
 &lt;/figure&gt;
 
 
@@ -1978,14 +2032,6 @@ The Eclipse Ditto team&lt;/p&gt;</description>
 			&lt;/div&gt;
 													&lt;/div&gt;</description>
 	<pubDate>Fri, 21 Dec 2018 13:38:00 +0000</pubDate>
-</item>
-<item>
-	<title>Tom Schindl: Slides from JavaFX-Days Zürich on e(fx)clipse APIs</title>
-	<guid isPermaLink="false">http://tomsondev.bestsolution.at/?p=5183</guid>
-	<link>https://tomsondev.bestsolution.at/2018/12/05/slides-from-javafx-days-zurich-on-efxclipse-apis/</link>
-	<description>&lt;p&gt;If you could not attend &lt;a href=&quot;https://www.javafx-days.com/&quot;&gt;my talk at the JavaFX-Days ZÃ¼rich&lt;/a&gt; yesterday or you did and wanted to recap what you’ve presented. Here are the &lt;a href=&quot;https://tomsondev.bestsolution.at/2018/12/05/slides-from-javafx-days-zurich-on-efxclipse-apis/javafx-days/&quot; rel=&quot;attachment wp-att-5184&quot;&gt;slides&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I enjoyed the conference and I hope you did as well. See you next year!&lt;/p&gt;</description>
-	<pubDate>Wed, 05 Dec 2018 08:57:45 +0000</pubDate>
 </item>
 
 </channel>
