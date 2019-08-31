@@ -17,9 +17,8 @@ void exchange2(int *a, int *b)
 	*a = *a ^ *b;
 	*b = *a ^ *b;
 	*a = *a ^ *b;
-	printf("Õæ¼Ù»»a=%d,b=%d\n", *a, *b);
+	printf("Õæ½»»»a=%d,b=%d\n", *a, *b);
 }
-
 
 int main()
 {
