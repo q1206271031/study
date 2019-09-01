@@ -1,0 +1,5 @@
+﻿  源.c
+d:\study\c代码\057模拟strcpy\057模拟strcpy\源.c(18): warning C4018: “<=”: 有符号/无符号不匹配
+d:\study\c代码\057模拟strcpy\057模拟strcpy\源.c(34): warning C4028: 形参 2 与声明不同
+d:\study\c代码\057模拟strcpy\057模拟strcpy\源.c(37): warning C4018: “<=”: 有符号/无符号不匹配
+  057模拟strcpy.vcxproj -> D:\Study\c代码\057模拟strcpy\Debug\057模拟strcpy.exe
