@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<windows.h>
-
+//n*(n-1)/2时间复杂度O(n^2)
 void swap(int *num1,int *num2)
 {
 	int temp;
@@ -59,12 +59,26 @@ void selectSort3(int a[],int len)
 		a[i] = max;
 	}
 }
+void selectSort4(int a[], size_t len)
+{
+	for (size_t i = 0; i < len; i++)
+	{
+		int max = a[i];
+		for (size_t j = i+1; j < len; j++)
+		{
+			if (max<a[j])
+			{
+				swap(&max,& a[j]);
+			}
+		}
+		a[i] = max;
+	}
+}
 
 //插入排序
 //把数组分成已排序和未排序两个区间，以数组第一个元素当做已排序区间，剩下的即被当做未排序区间，
 //每次都从未排序区间中找出一个元素来和已排序区间中的元素比较，并插入到已排序区间中的合适位置，
 //直到未排序区间元素为 0 。
-
 
 void insertSort(int arr[], int length) {
 	for (int i = 1; i < length; i++) {
@@ -108,7 +122,7 @@ void insertSort3(int a[], int len)
 		int j;
 		for ( j = i-1; j >=0; j--)
 		{
-			if (max > a[i])
+			if (max > a[j])
 			{
 				a[j + 1] = a[j];
 			}
@@ -118,6 +132,28 @@ void insertSort3(int a[], int len)
 			}
 		}
 		a[j + 1] = max;
+	}
+}
+void insertSort4(int a[], size_t len)
+{
+	//假设前面的都已经排好序
+	for (size_t i = 0; i < len-1; i++)
+	{
+		int tmp = a[i + 1];
+		int j = i;
+		for (; j >=0 ; j--)
+		{
+			if (tmp > a[j])//升序
+			{
+				//前面后移
+				a[j + 1] = a[j];
+			}
+			else
+			{
+				break;
+			}
+		}
+		a[j+1] = tmp;
 	}
 }
 
@@ -169,8 +205,8 @@ int main()
 	int length2 = sizeof(b) / sizeof(b[0]);
 	int length3 = sizeof(c) / sizeof(c[0]);
 
-	selectSort2(a, length1);
-	insertSort2(b, length2);
+	selectSort4(a, length1);
+	insertSort4(b, length2);
 	bubbleSort1(c, length3);
 	print(a, length1);//print函数用来打印数组
 	printf("\n");
