@@ -1,0 +1,5 @@
+﻿  源.c
+d:\study\c代码\058string函数\058string函数\源.c(38): warning C4716: “Strstr”: 必须返回一个值
+d:\study\c代码\058string函数\058string函数\源.c(41): warning C4716: “Strtchr”: 必须返回一个值
+d:\study\c代码\058string函数\058string函数\源.c(44): warning C4716: “Strcmp”: 必须返回一个值
+  058string函数.vcxproj -> D:\Study\c代码\058string函数\Debug\058string函数.exe
