@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<windows.h>
-//n*(n-1)/2Ê±¼ä¸´ÔÓ¶ÈO(n^2)
+//n*(n-1)/2æ—¶é—´å¤æ‚åº¦O(n^2)
 void swap(int *num1,int *num2)
 {
 	int temp;
@@ -9,18 +9,18 @@ void swap(int *num1,int *num2)
 	*num1 = *num2;
 	*num2 = temp;
 }
-//Ñ¡ÔñÅÅĞò
+//é€‰æ‹©æ’åº
 void selectSort(int arr[],int length) {
 	for (int i = 0; i < length; i++){
-		int max = arr[i];//j¼ÙÉèµÚÒ»¸öÎª×î´óÊı
-		for (int j = i + 1; j < length; j++)//ÕÒÊ£ÓàÎ´ÅÅºÃĞòµÄ×î´óÊı
+		int max = arr[i];//jå‡è®¾ç¬¬ä¸€ä¸ªä¸ºæœ€å¤§æ•°
+		for (int j = i + 1; j < length; j++)//æ‰¾å‰©ä½™æœªæ’å¥½åºçš„æœ€å¤§æ•°
 		{
 			if (max<arr[j])
 			{
-				swap(&max, &arr[j]);//½»»»max ºÍ arr[j];
+				swap(&max, &arr[j]);//äº¤æ¢max å’Œ arr[j];
 			}
 		}
-		arr[i] = max;//½«ÕÒµ½µÄ×î´óÊıÅÅĞò·ÅÈë¶ÓÁĞÖĞ
+		arr[i] = max;//å°†æ‰¾åˆ°çš„æœ€å¤§æ•°æ’åºæ”¾å…¥é˜Ÿåˆ—ä¸­
 	}
 }
 void selectSort2(int a[], int len)
@@ -75,20 +75,20 @@ void selectSort4(int a[], size_t len)
 	}
 }
 
-//²åÈëÅÅĞò
-//°ÑÊı×é·Ö³ÉÒÑÅÅĞòºÍÎ´ÅÅĞòÁ½¸öÇø¼ä£¬ÒÔÊı×éµÚÒ»¸öÔªËØµ±×öÒÑÅÅĞòÇø¼ä£¬Ê£ÏÂµÄ¼´±»µ±×öÎ´ÅÅĞòÇø¼ä£¬
-//Ã¿´Î¶¼´ÓÎ´ÅÅĞòÇø¼äÖĞÕÒ³öÒ»¸öÔªËØÀ´ºÍÒÑÅÅĞòÇø¼äÖĞµÄÔªËØ±È½Ï£¬²¢²åÈëµ½ÒÑÅÅĞòÇø¼äÖĞµÄºÏÊÊÎ»ÖÃ£¬
-//Ö±µ½Î´ÅÅĞòÇø¼äÔªËØÎª 0 ¡£
+//æ’å…¥æ’åº
+//æŠŠæ•°ç»„åˆ†æˆå·²æ’åºå’Œæœªæ’åºä¸¤ä¸ªåŒºé—´ï¼Œä»¥æ•°ç»„ç¬¬ä¸€ä¸ªå…ƒç´ å½“åšå·²æ’åºåŒºé—´ï¼Œå‰©ä¸‹çš„å³è¢«å½“åšæœªæ’åºåŒºé—´ï¼Œ
+//æ¯æ¬¡éƒ½ä»æœªæ’åºåŒºé—´ä¸­æ‰¾å‡ºä¸€ä¸ªå…ƒç´ æ¥å’Œå·²æ’åºåŒºé—´ä¸­çš„å…ƒç´ æ¯”è¾ƒï¼Œå¹¶æ’å…¥åˆ°å·²æ’åºåŒºé—´ä¸­çš„åˆé€‚ä½ç½®ï¼Œ
+//ç›´åˆ°æœªæ’åºåŒºé—´å…ƒç´ ä¸º 0 ã€‚
 
 void insertSort(int arr[], int length) {
 	for (int i = 1; i < length; i++) {
-		int insert = arr[i];//´ı²åÈëÊı×Ö
+		int insert = arr[i];//å¾…æ’å…¥æ•°å­—
 		int j;
-		for (j = i - 1; j >= 0&&insert >arr[j]; j--)//´ı²åÈëµÄÊı×Ö±ÈÇ°Ò»¸öÊı×Ö´ó£¬
+		for (j = i - 1; j >= 0&&insert >arr[j]; j--)//å¾…æ’å…¥çš„æ•°å­—æ¯”å‰ä¸€ä¸ªæ•°å­—å¤§ï¼Œ
 		{
-			arr[j + 1] = arr[j];		//Êı×ÖÏòÓÒÒÆ¶«ÌÚ³ö¿ÕÎ»£»
+			arr[j + 1] = arr[j];		//æ•°å­—å‘å³ç§»ä¸œè…¾å‡ºç©ºä½ï¼›
 		}
-		arr[j + 1] = insert;//²åÈë¿ÕÎ»
+		arr[j + 1] = insert;//æ’å…¥ç©ºä½
 	}
 }
 void insertSort2(int a[], int len)
@@ -101,15 +101,15 @@ void insertSort2(int a[], int len)
 		{
 			if (insert>a[j])
 			{
-				a[j + 1] = a[j];//jÎ»ÖÃ±»¿Õ³öÀ´
+				a[j + 1] = a[j];//jä½ç½®è¢«ç©ºå‡ºæ¥
 			}
 			else
 			{
-				break;//µ±insertĞ¡ÓÚa[j]Ê±£¬Ëü¾ÍĞ¡a[j]Ç°ÃæµÄËùÓĞÊı£¬Èç¹û¼ÌĞøÈÃj--£¬
-							//Ìø³öÑ­»·Ê±¾Í»á°Ñ£¬insert²åÈëa[0]Î»ÖÃ£»//Ëã·¨´íÎó
+				break;//å½“insertå°äºa[j]æ—¶ï¼Œå®ƒå°±å°a[j]å‰é¢çš„æ‰€æœ‰æ•°ï¼Œå¦‚æœç»§ç»­è®©j--ï¼Œ
+							//è·³å‡ºå¾ªç¯æ—¶å°±ä¼šæŠŠï¼Œinsertæ’å…¥a[0]ä½ç½®ï¼›//ç®—æ³•é”™è¯¯
 			}
 		}
-		//ÍË³öÑ­»·Ê±jÖ¸ÏòÅ²³öÀ´µÄ¿ÕÎ»ÖÃµÄÇ°Ò»¸öÎ»ÖÃ
+		//é€€å‡ºå¾ªç¯æ—¶jæŒ‡å‘æŒªå‡ºæ¥çš„ç©ºä½ç½®çš„å‰ä¸€ä¸ªä½ç½®
 		a[j + 1] = insert; 
 	}
 
@@ -120,7 +120,7 @@ void insertSort3(int a[], int len)
 	{
 		int max = a[i];
 		int j;
-		for ( j = i-1; j >=0; j--)
+		for ( j = i-1; j >=0; j--)//è‹¥jä¸ºsize_tåˆ™åœ¨ç­‰äºé›¶ååœ¨å‡ä¸€æ—¶å°±ä¼šå¤§äºé›¶
 		{
 			if (max > a[j])
 			{
@@ -136,16 +136,16 @@ void insertSort3(int a[], int len)
 }
 void insertSort4(int a[], size_t len)
 {
-	//¼ÙÉèÇ°ÃæµÄ¶¼ÒÑ¾­ÅÅºÃĞò
+	//å‡è®¾å‰é¢çš„éƒ½å·²ç»æ’å¥½åº
 	for (size_t i = 0; i < len-1; i++)
 	{
 		int tmp = a[i + 1];
 		int j = i;
 		for (; j >=0 ; j--)
 		{
-			if (tmp > a[j])//ÉıĞò
+			if (tmp > a[j])//å‡åº
 			{
-				//Ç°ÃæºóÒÆ
+				//å‰é¢åç§»
 				a[j + 1] = a[j];
 			}
 			else
@@ -165,7 +165,7 @@ void bubbleSort(int arr[],int length)
 	{
 		for (int i = 0; i < end; i++)
 		{
-			if (arr[i] < arr[i + 1])//½µĞò
+			if (arr[i] < arr[i + 1])//é™åº
 			{
 				swap(&arr[i], &arr[i + 1]);
 			}
@@ -188,7 +188,7 @@ void bubbleSort1(int a[], int len)
 }
 
 
-//printº¯ÊıÓÃÀ´´òÓ¡Êı×é
+//printå‡½æ•°ç”¨æ¥æ‰“å°æ•°ç»„
 void print(int arr[],int length)
 {
 	for (int i = 0; i < length; i++) {
@@ -208,11 +208,11 @@ int main()
 	selectSort4(a, length1);
 	insertSort4(b, length2);
 	bubbleSort1(c, length3);
-	print(a, length1);//printº¯ÊıÓÃÀ´´òÓ¡Êı×é
+	print(a, length1);//printå‡½æ•°ç”¨æ¥æ‰“å°æ•°ç»„
 	printf("\n");
-	print(b, length2);//printº¯ÊıÓÃÀ´´òÓ¡Êı×é
+	print(b, length2);//printå‡½æ•°ç”¨æ¥æ‰“å°æ•°ç»„
 	printf("\n");
-	print(c, length3);//printº¯ÊıÓÃÀ´´òÓ¡Êı×é
+	print(c, length3);//printå‡½æ•°ç”¨æ¥æ‰“å°æ•°ç»„
 	system("pause");
 	return 0;
 }
