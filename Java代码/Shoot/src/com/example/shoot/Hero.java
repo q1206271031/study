@@ -48,6 +48,8 @@ public class Hero extends FlyingObject{
     /** 减命 */
     public void subtractLife(){   //减命
         life--;
+        //播放爆照效果
+        
     }
 
     /** 获取命 */

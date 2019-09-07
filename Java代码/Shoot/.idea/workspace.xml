@@ -16,16 +16,16 @@
         <entry file="file://$PROJECT_DIR$/src/com/example/shoot/FlyingObject.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1404">
-              <caret line="72" column="28" lean-forward="true" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+              <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hero.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Hero.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/shoot/Hero.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+            <state relative-caret-position="324">
+              <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
               <folding>
                 <element signature="e#686#687#0" expanded="true" />
                 <element signature="e#719#720#0" expanded="true" />
@@ -35,8 +35,6 @@
                 <element signature="e#911#912#0" expanded="true" />
                 <element signature="e#953#954#0" expanded="true" />
                 <element signature="e#981#982#0" expanded="true" />
-                <element signature="e#1028#1029#0" expanded="true" />
-                <element signature="e#1057#1058#0" expanded="true" />
                 <element signature="e#1099#1100#0" expanded="true" />
                 <element signature="e#1126#1127#0" expanded="true" />
                 <element signature="e#1332#1333#0" expanded="true" />
@@ -46,16 +44,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShootGame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ShootGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/shoot/ShootGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="5567">
+              <caret line="290" column="30" selection-start-line="290" selection-start-column="30" selection-end-line="290" selection-end-column="30" />
               <folding>
-                <element signature="e#3188#3189#0" expanded="true" />
-                <element signature="e#3264#3265#0" expanded="true" />
-                <element signature="e#6195#6683#0" expanded="true" />
-                <element signature="e#6682#6683#0" expanded="true" />
+                <element signature="method#paintBullets#0;class#ShootGame#0" />
+                <element signature="method#paintFlyingObjects#0;class#ShootGame#0" />
+                <element signature="method#paintScore#0;class#ShootGame#0" />
+                <element signature="method#paintState#0;class#ShootGame#0" />
+                <element signature="e#6181#6669#0" expanded="true" />
+                <element signature="e#6668#6669#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,8 +64,8 @@
       <file leaf-file-name="ImageIO.java" pinned="false" current-in-tab="false">
         <entry file="jar://D:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.desktop/javax/imageio/ImageIO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="1346" column="17" lean-forward="true" selection-start-line="1346" selection-start-column="17" selection-end-line="1346" selection-end-column="17" />
+            <state relative-caret-position="33750">
+              <caret line="1346" column="17" selection-start-line="1346" selection-start-column="17" selection-end-line="1346" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -73,11 +73,9 @@
       <file leaf-file-name="Airplane.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/shoot/Airplane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-297">
-              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            <state relative-caret-position="432">
+              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
               <folding>
-                <element signature="e#501#502#0" expanded="true" />
-                <element signature="e#525#526#0" expanded="true" />
                 <element signature="e#594#595#0" expanded="true" />
                 <element signature="e#635#636#0" expanded="true" />
                 <element signature="e#689#690#0" expanded="true" />
@@ -90,7 +88,7 @@
       <file leaf-file-name="Bee.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/shoot/Bee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="999">
               <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
               <folding>
                 <element signature="e#586#587#0" expanded="true" />
@@ -105,7 +103,7 @@
       <file leaf-file-name="Bullet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/shoot/Bullet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-431">
+            <state relative-caret-position="189">
               <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding>
                 <element signature="e#314#315#0" expanded="true" />
@@ -137,8 +135,8 @@
         <option value="$PROJECT_DIR$/src/com/example/shoot/Bee.java" />
         <option value="$PROJECT_DIR$/src/com/example/shoot/Airplane.java" />
         <option value="$PROJECT_DIR$/src/com/example/shoot/Bullet.java" />
-        <option value="$PROJECT_DIR$/src/com/example/shoot/Hero.java" />
         <option value="$PROJECT_DIR$/src/com/example/shoot/ShootGame.java" />
+        <option value="$PROJECT_DIR$/src/com/example/shoot/Hero.java" />
       </list>
     </option>
   </component>
@@ -158,19 +156,16 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="1943" />
-    <option name="height" value="1043" />
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="1944" />
+    <option name="height" value="1044" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,6 +188,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -298,32 +296,32 @@
       <updated>1567787473751</updated>
       <workItem from="1567787478317" duration="4766000" />
       <workItem from="1567825077347" duration="13163000" />
+      <workItem from="1567865354023" duration="940000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17929000" />
+    <option name="totallyTimeSpent" value="18869000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.14470494" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.017784964" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3291592" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.007155635" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14713015" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16410671" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.037567083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -335,6 +333,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.037567083" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,30 +350,97 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/example/shoot/FlyingObject.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1404">
+          <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/shoot/Hero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2862">
+          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+          <folding>
+            <element signature="e#686#687#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#880#881#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#953#954#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+            <element signature="e#1099#1100#0" expanded="true" />
+            <element signature="e#1126#1127#0" expanded="true" />
+            <element signature="e#1332#1333#0" expanded="true" />
+            <element signature="e#1360#1361#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.desktop/javax/imageio/ImageIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36342">
+          <caret line="1346" column="17" lean-forward="true" selection-start-line="1346" selection-start-column="17" selection-end-line="1346" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/shoot/Airplane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/shoot/Bee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="999">
+          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+          <folding>
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/shoot/Bullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/shoot/ShootGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1404">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="method#paintBullets#0;class#ShootGame#0" />
+            <element signature="method#paintFlyingObjects#0;class#ShootGame#0" />
+            <element signature="method#paintScore#0;class#ShootGame#0" />
+            <element signature="method#paintState#0;class#ShootGame#0" />
+            <element signature="e#6181#6669#0" expanded="true" />
+            <element signature="e#6668#6669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/shoot/FlyingObject.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
           <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
-          <folding>
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#775#776#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-            <element signature="e#925#926#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -391,8 +457,6 @@
             <element signature="e#911#912#0" expanded="true" />
             <element signature="e#953#954#0" expanded="true" />
             <element signature="e#981#982#0" expanded="true" />
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
             <element signature="e#1099#1100#0" expanded="true" />
             <element signature="e#1126#1127#0" expanded="true" />
             <element signature="e#1332#1333#0" expanded="true" />
@@ -420,8 +484,6 @@
         <state relative-caret-position="81">
           <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
           <folding>
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
             <element signature="e#594#595#0" expanded="true" />
             <element signature="e#635#636#0" expanded="true" />
             <element signature="e#689#690#0" expanded="true" />
@@ -448,6 +510,7 @@
         <state relative-caret-position="162">
           <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
           <folding>
+            <element signature="e#314#315#0" expanded="true" />
             <element signature="e#338#339#0" expanded="true" />
             <element signature="e#404#405#0" expanded="true" />
             <element signature="e#436#437#0" expanded="true" />
@@ -460,10 +523,12 @@
         <state relative-caret-position="675">
           <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
           <folding>
-            <element signature="e#3188#3189#0" expanded="true" />
-            <element signature="e#3264#3265#0" expanded="true" />
-            <element signature="e#6195#6683#0" expanded="true" />
-            <element signature="e#6682#6683#0" expanded="true" />
+            <element signature="method#paintBullets#0;class#ShootGame#0" />
+            <element signature="method#paintFlyingObjects#0;class#ShootGame#0" />
+            <element signature="method#paintScore#0;class#ShootGame#0" />
+            <element signature="method#paintState#0;class#ShootGame#0" />
+            <element signature="e#6181#6669#0" expanded="true" />
+            <element signature="e#6668#6669#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -471,9 +536,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/example/shoot/picture/gameover.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/shoot/package-info.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/shoot/package-info.java" />
     <entry file="file://$PROJECT_DIR$/src/com/example/shoot/Enemy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -493,25 +556,23 @@
     </entry>
     <entry file="jar://D:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.desktop/javax/imageio/ImageIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="1346" column="17" lean-forward="true" selection-start-line="1346" selection-start-column="17" selection-end-line="1346" selection-end-column="17" />
+        <state relative-caret-position="33750">
+          <caret line="1346" column="17" selection-start-line="1346" selection-start-column="17" selection-end-line="1346" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/shoot/FlyingObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1404">
-          <caret line="72" column="28" lean-forward="true" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+          <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/shoot/Airplane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        <state relative-caret-position="432">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding>
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
             <element signature="e#594#595#0" expanded="true" />
             <element signature="e#635#636#0" expanded="true" />
             <element signature="e#689#690#0" expanded="true" />
@@ -522,7 +583,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/shoot/Bee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="999">
           <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
           <folding>
             <element signature="e#586#587#0" expanded="true" />
@@ -535,7 +596,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/shoot/Bullet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-431">
+        <state relative-caret-position="189">
           <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding>
             <element signature="e#314#315#0" expanded="true" />
@@ -546,10 +607,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/shoot/ShootGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5567">
+          <caret line="290" column="30" selection-start-line="290" selection-start-column="30" selection-end-line="290" selection-end-column="30" />
+          <folding>
+            <element signature="method#paintBullets#0;class#ShootGame#0" />
+            <element signature="method#paintFlyingObjects#0;class#ShootGame#0" />
+            <element signature="method#paintScore#0;class#ShootGame#0" />
+            <element signature="method#paintState#0;class#ShootGame#0" />
+            <element signature="e#6181#6669#0" expanded="true" />
+            <element signature="e#6668#6669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/shoot/Hero.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+        <state relative-caret-position="324">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
           <folding>
             <element signature="e#686#687#0" expanded="true" />
             <element signature="e#719#720#0" expanded="true" />
@@ -559,25 +635,10 @@
             <element signature="e#911#912#0" expanded="true" />
             <element signature="e#953#954#0" expanded="true" />
             <element signature="e#981#982#0" expanded="true" />
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
             <element signature="e#1099#1100#0" expanded="true" />
             <element signature="e#1126#1127#0" expanded="true" />
             <element signature="e#1332#1333#0" expanded="true" />
             <element signature="e#1360#1361#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/shoot/ShootGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="e#3188#3189#0" expanded="true" />
-            <element signature="e#3264#3265#0" expanded="true" />
-            <element signature="e#6195#6683#0" expanded="true" />
-            <element signature="e#6682#6683#0" expanded="true" />
           </folding>
         </state>
       </provider>

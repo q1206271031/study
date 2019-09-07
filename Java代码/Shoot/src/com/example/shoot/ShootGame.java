@@ -65,8 +65,7 @@ public class ShootGame extends JPanel {
             hero0 = ImageIO.read(ShootGame.class.getResource("hero1.png"));
             hero1 = ImageIO.read(ShootGame.class.getResource("hero2.png"));
             pause = ImageIO.read(ShootGame.class.getResource("pause.png"));
-            gameover = ImageIO
-                    .read(ShootGame.class.getResource("gameover.png"));
+            gameover = ImageIO.read(ShootGame.class.getResource("gameover.png"));
         } catch (Exception e) {
             e.printStackTrace();
         }
