@@ -1,0 +1,43 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#pragma warning(disable:4996)
+//typedef int bool;
+#define false 0
+#define true !false
+//系统中所有进程数量
+#define PROCESSES_NUMBER    5
+typedef struct {
+	int A; 
+	int B;
+	int C;
+	int D;
+}RESOURCE;
+//最大需求矩阵  Max
+RESOURCE Max[PROCESSES_NUMBER] =
+{
+	{7,5,3},
+	{3,2,2},
+	{9,0,2},
+	{2,2,2},
+	{4,3,3}
+};
+//已分配资源数矩阵 Allocation
+RESOURCE Allocation[PROCESSES_NUMBER] =
+{
+	{0,1,0},
+	{2,0,0},
+	{3,0,2},
+	{2,1,1},
+	{0,0,2}
+};
+//需求矩阵
+RESOURCE Need[PROCESSES_NUMBER] =
+{
+	{7,4,3},
+	{1,2,2},
+	{6,0,0},
+	{0,1,1},
+	{4,3,1}
+};
+//可用资源向量
+RESOURCE Available = { 3,3,2};
+int safe[PROCESSES_NUMBER];
