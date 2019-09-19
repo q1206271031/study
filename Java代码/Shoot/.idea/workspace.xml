@@ -14,11 +14,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="ShootGame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/shoot/ShootGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
+            <state relative-caret-position="-123">
               <caret line="134" column="7" selection-start-line="134" selection-start-column="7" selection-end-line="134" selection-end-column="7" />
               <folding>
                 <element signature="method#paintBullets#0;class#ShootGame#0" />
@@ -80,6 +80,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -104,13 +105,12 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FirstGame" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Homework" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -217,18 +217,19 @@
       <workItem from="1568292442964" duration="793000" />
       <workItem from="1568296231784" duration="189000" />
       <workItem from="1568791922894" duration="445000" />
+      <workItem from="1568863515730" duration="30000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20489000" />
+    <option name="totallyTimeSpent" value="20519000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -240,7 +241,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3291592" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17623281" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17865804" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -255,6 +256,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.037567083" />
+      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,12 +288,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -303,8 +299,6 @@
             <element signature="method#paintBullets#0;class#ShootGame#0" />
             <element signature="method#paintFlyingObjects#0;class#ShootGame#0" />
             <element signature="method#paintScore#0;class#ShootGame#0" />
-            <element signature="e#6162#6650#0" expanded="true" />
-            <element signature="e#6649#6650#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -344,12 +338,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding>
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -370,12 +358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -387,8 +369,6 @@
             <element signature="method#paintBullets#0;class#ShootGame#0" />
             <element signature="method#paintFlyingObjects#0;class#ShootGame#0" />
             <element signature="method#paintScore#0;class#ShootGame#0" />
-            <element signature="e#6162#6650#0" expanded="true" />
-            <element signature="e#6649#6650#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -408,8 +388,6 @@
             <element signature="method#paintBullets#0;class#ShootGame#0" />
             <element signature="method#paintFlyingObjects#0;class#ShootGame#0" />
             <element signature="method#paintScore#0;class#ShootGame#0" />
-            <element signature="e#6162#6650#0" expanded="true" />
-            <element signature="e#6649#6650#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -425,12 +403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding>
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -451,12 +423,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -492,8 +458,6 @@
             <element signature="method#paintBullets#0;class#ShootGame#0" />
             <element signature="method#paintFlyingObjects#0;class#ShootGame#0" />
             <element signature="method#paintScore#0;class#ShootGame#0" />
-            <element signature="e#6162#6650#0" expanded="true" />
-            <element signature="e#6649#6650#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -509,12 +473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding>
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -535,12 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -596,12 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding>
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -622,12 +568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -639,8 +579,6 @@
             <element signature="method#paintBullets#0;class#ShootGame#0" />
             <element signature="method#paintFlyingObjects#0;class#ShootGame#0" />
             <element signature="method#paintScore#0;class#ShootGame#0" />
-            <element signature="e#6162#6650#0" expanded="true" />
-            <element signature="e#6649#6650#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -687,12 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-          <folding>
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -713,12 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -730,8 +656,6 @@
             <element signature="method#paintBullets#0;class#ShootGame#0" />
             <element signature="method#paintFlyingObjects#0;class#ShootGame#0" />
             <element signature="method#paintScore#0;class#ShootGame#0" />
-            <element signature="e#6162#6650#0" expanded="true" />
-            <element signature="e#6649#6650#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -781,12 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -818,25 +736,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding>
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/shoot/ShootGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
+        <state relative-caret-position="-123">
           <caret line="134" column="7" selection-start-line="134" selection-start-column="7" selection-end-line="134" selection-end-column="7" />
           <folding>
             <element signature="method#paintBullets#0;class#ShootGame#0" />
             <element signature="method#paintFlyingObjects#0;class#ShootGame#0" />
             <element signature="method#paintScore#0;class#ShootGame#0" />
-            <element signature="e#6162#6650#0" expanded="true" />
-            <element signature="e#6649#6650#0" expanded="true" />
           </folding>
         </state>
       </provider>

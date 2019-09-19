@@ -30,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Day06.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Day06.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Day06.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="191" column="36" lean-forward="true" selection-start-line="191" selection-start-column="36" selection-end-line="191" selection-end-column="36" />
+            <state relative-caret-position="3483">
+              <caret line="191" column="36" selection-start-line="191" selection-start-column="36" selection-end-line="191" selection-end-column="36" />
               <folding>
                 <element signature="method#method010#0;class#Day06#0" />
                 <element signature="method#method011#0;class#Day06#0" />
@@ -45,7 +45,27 @@
                 <element signature="method#method05#0;class#Day06#0" />
                 <element signature="method#method061#0;class#Day06#0" />
                 <element signature="method#method062#0;class#Day06#0" />
-                <element signature="method#method7#0;class#Day06#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Day07.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Day07.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-324">
+              <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+              <folding>
+                <element signature="e#360#361#0" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#280#281#0" expanded="true" />
+                <element signature="e#307#308#0" expanded="true" />
+                <element signature="e#344#345#0" expanded="true" />
+                <element signature="e#376#377#0" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
+                <element signature="e#431#432#0" expanded="true" />
+                <element signature="e#468#469#0" expanded="true" />
+                <element signature="e#500#501#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,6 +94,7 @@
         <option value="$PROJECT_DIR$/src/Day04.java" />
         <option value="$PROJECT_DIR$/src/Day05.java" />
         <option value="$PROJECT_DIR$/src/Day06.java" />
+        <option value="$PROJECT_DIR$/src/Day07.java" />
       </list>
     </option>
   </component>
@@ -87,8 +108,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="15" />
-    <option name="y" value="30" />
+    <option name="x" value="-24" />
+    <option name="y" value="474" />
     <option name="width" value="1890" />
     <option name="height" value="930" />
   </component>
@@ -98,8 +119,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,6 +135,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -138,7 +159,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Day06">
+  <component name="RunManager" selected="Application.Day07">
     <configuration name="Day04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day04" />
       <module name="Homework" />
@@ -151,6 +172,11 @@
     </configuration>
     <configuration name="Day06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day06" />
+      <module name="Homework" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="Day07" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day07" />
       <module name="Homework" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -199,9 +225,11 @@
       <item itemvalue="Application.Day04" />
       <item itemvalue="Application.Day05" />
       <item itemvalue="Application.Day06" />
+      <item itemvalue="Application.Day07" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Day07" />
         <item itemvalue="Application.Day06" />
         <item itemvalue="Application.Day05" />
         <item itemvalue="Application.Day04" />
@@ -221,11 +249,13 @@
       <workItem from="1568600799350" duration="3373000" />
       <workItem from="1568686583715" duration="12913000" />
       <workItem from="1568720783213" duration="2721000" />
+      <workItem from="1568863549569" duration="834000" />
+      <workItem from="1568886397055" duration="957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19007000" />
+    <option name="totallyTimeSpent" value="20798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -240,11 +270,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20572451" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29516995" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25788197" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.10185934" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -259,6 +289,36 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10185934" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4257603" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3291592" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -267,6 +327,89 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Day04.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="40" column="24" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day05.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day06.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5157">
+          <caret line="191" column="36" selection-start-line="191" selection-start-column="36" selection-end-line="191" selection-end-column="36" />
+          <folding>
+            <element signature="method#method010#0;class#Day06#0" />
+            <element signature="method#method011#0;class#Day06#0" />
+            <element signature="method#method020#0;class#Day06#0" />
+            <element signature="method#method021#0;class#Day06#0" />
+            <element signature="method#method03#0;class#Day06#0" />
+            <element signature="method#method04#0;class#Day06#0" />
+            <element signature="method#method05#0;class#Day06#0" />
+            <element signature="method#method061#0;class#Day06#0" />
+            <element signature="method#method062#0;class#Day06#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day07.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+          <folding>
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day04.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="40" column="24" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day05.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day06.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3483">
+          <caret line="191" column="36" lean-forward="true" selection-start-line="191" selection-start-column="36" selection-end-line="191" selection-end-column="36" />
+          <folding>
+            <element signature="method#method010#0;class#Day06#0" />
+            <element signature="method#method011#0;class#Day06#0" />
+            <element signature="method#method020#0;class#Day06#0" />
+            <element signature="method#method021#0;class#Day06#0" />
+            <element signature="method#method03#0;class#Day06#0" />
+            <element signature="method#method04#0;class#Day06#0" />
+            <element signature="method#method05#0;class#Day06#0" />
+            <element signature="method#method061#0;class#Day06#0" />
+            <element signature="method#method062#0;class#Day06#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Day04.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
@@ -295,7 +438,6 @@
             <element signature="method#method05#0;class#Day06#0" />
             <element signature="method#method061#0;class#Day06#0" />
             <element signature="method#method062#0;class#Day06#0" />
-            <element signature="method#method7#0;class#Day06#0" />
           </folding>
         </state>
       </provider>
@@ -330,8 +472,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Day06.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="191" column="36" lean-forward="true" selection-start-line="191" selection-start-column="36" selection-end-line="191" selection-end-column="36" />
+        <state relative-caret-position="3483">
+          <caret line="191" column="36" selection-start-line="191" selection-start-column="36" selection-end-line="191" selection-end-column="36" />
           <folding>
             <element signature="method#method010#0;class#Day06#0" />
             <element signature="method#method011#0;class#Day06#0" />
@@ -342,7 +484,25 @@
             <element signature="method#method05#0;class#Day06#0" />
             <element signature="method#method061#0;class#Day06#0" />
             <element signature="method#method062#0;class#Day06#0" />
-            <element signature="method#method7#0;class#Day06#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Day07.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+          <folding>
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
           </folding>
         </state>
       </provider>
