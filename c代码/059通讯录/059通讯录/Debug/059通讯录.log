@@ -1,4 +1,0 @@
-﻿  源.c
-d:\study\c代码\059通讯录\059通讯录\源.c(156): warning C4047: “=”:“char *”与“int”的间接级别不同
-d:\study\c代码\059通讯录\059通讯录\源.c(163): warning C4047: “=”:“char *”与“int”的间接级别不同
-  059通讯录.vcxproj -> D:\Study\c代码\059通讯录\Debug\059通讯录.exe
