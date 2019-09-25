@@ -6,9 +6,9 @@
 </div>
 <br>
 
-| &nbsp;java&nbsp; | 数据结构 | &nbsp;网络&nbsp;|操作系统| &nbsp;&nbsp;数据库&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;规范&nbsp;&nbsp;&nbsp;|         系统设计| &nbsp;&nbsp;&nbsp;工具&nbsp;&nbsp;&nbsp; |代码实践| &nbsp;&nbsp;&nbsp;后续&nbsp;&nbsp;&nbsp; |
+| &nbsp;C&nbsp; | Java | &nbsp;数据结构&nbsp;|计算机网络| &nbsp;&nbsp;操作系统&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;规范&nbsp;&nbsp;&nbsp;|         系统设计| &nbsp;&nbsp;&nbsp;工具&nbsp;&nbsp;&nbsp; |代码实践| &nbsp;&nbsp;&nbsp;后续&nbsp;&nbsp;&nbsp; |
 | :---: | :----: | :---: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| [:coffee:](#coffee-Java) | [:key:](#key-数据结构) | [:herb:](#herb-网络) | [:computer:](#computer-操作系统) | [:floppy_disk:](#floppy_disk-数据库) |[:bug:](#bug-规范)| [:bulb:](#bulb-系统设计) |[:wrench:](#wrench-工具)| [:watermelon:](#watermelon-编码实践) |[:memo:](#memo-后记)|
+| [:cyclone:](#cyclone-c语言) | [:coffee:](#coffee-Java) | [:key:](#key-数据结构) | [:herb:](#herb-计算机网络) | [:computer:](#computer-操作系统) |[:bug:](#bug-规范)| [:bulb:](#bulb-系统设计) |[:wrench:](#wrench-工具)| [:watermelon:](#watermelon-编码实践) |[:memo:](#memo-后记)|
 
 <br>
 
@@ -21,9 +21,10 @@
 [Markdown教程](https://www.runoob.com/markdown/md-tutorial.html)              
 [菜鸟教程](https://www.runoob.com)
 
+## C语言 
+[C语言](https://github.com/eternityfantastic/study/blob/master/note/C语言.md)
 
-
-# :coffee: Java 
+## :coffee: Java 
 ### Java基础        
 [java语言简介](https://github.com/eternityfantastic/study/blob/master/note/Java语言简介.md)  
 [基本程序设计](https://github.com/eternityfantastic/study/blob/master/note/基本程序设计.md)  
@@ -53,10 +54,10 @@
 
 
 
-#  :key: 数据结构
+##  :key: 数据结构
 
-# :herb: 网络 
+## :herb: 网络 
 
-# :computer: 操作系统 
+## :computer: 操作系统 
 [作者介绍](https://www.runoob.com)
 
